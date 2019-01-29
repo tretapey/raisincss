@@ -21,7 +21,6 @@ We can set the display property as follows:
 - `.display-inline-block`
 - `.display-inline`
 - `.display-table`
-- `.display-table`
 - `.display-table-row`
 - `.display-table-cell`
 - `.display-none`

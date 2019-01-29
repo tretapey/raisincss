@@ -1,0 +1,14 @@
+@each $value in (visible, hidden) {
+  .#{$value} {
+    visibility: $value
+  }
+}
+@each $bname, $breakpoint in $breakpoints {
+  @media(min-width: $breakpoint) {
+    @each $value in (visible, hidden) {
+      .#{$bname}\:#{$value} {
+        visibility: $value
+      }
+    }
+  }
+}

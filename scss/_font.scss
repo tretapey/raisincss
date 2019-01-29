@@ -1,0 +1,83 @@
+$fontSizes: (
+  (xs, .75rem),
+  (sm, .875rem),
+  (base, 1rem),
+  (lg, 1.125rem),
+  (xl, 1.25rem),
+  (2xl,1.5rem),
+  (3xl,1.875rem),
+  (4xl,2.25rem),
+  (5xl,3rem),
+);
+
+$fontWeights: (
+  (thin, 200),
+  (light, 300),
+  (normal, 400),
+  (medium, 500),
+  (bold, 700),
+  (bolder, 800)
+);
+    
+.font {
+  //browser supported font-family styles
+  &-sans {
+    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+  &-serif {
+    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  }
+  &-mono {
+    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  }
+
+  &-italic {
+    font-style: italic;
+  }
+  &-roman {
+    font-style: normal;
+  }
+  &-antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @each $name, $size in $fontSizes {
+    &-#{$name} {
+      font-size: $size;
+    }
+  }
+  @each $name, $weight in $fontWeights {
+    &-#{$name} {
+      font-weight: $weight;
+    }
+  }
+}
+
+@each $bname, $breakpoint in $breakpoints {
+  @media(min-width: $breakpoint) {
+    .#{$bname}\:font {
+      &-italic {
+        font-style: italic;
+      }
+      &-roman {
+        font-style: normal;
+      }
+      &-antialiased {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      @each $name, $size in $fontSizes {
+        &-#{$name} {
+          font-size: $size;
+        }
+      }
+      @each $name, $weight in $fontWeights {
+        &-#{$name} {
+          font-weight: $weight;
+        }
+      }
+    }
+  }
+}

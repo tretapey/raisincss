@@ -365,6 +365,692 @@ button,
 table {
   border-collapse: collapse; }
 
+.display-block {
+  display: block; }
+.display-inline-block {
+  display: inline-block; }
+.display-inline {
+  display: inline; }
+.display-table {
+  display: table; }
+.display-table-row {
+  display: table-row; }
+.display-table-cell {
+  display: table-cell; }
+.display-none {
+  display: none; }
+.display-flex {
+  display: flex; }
+.display-inline-flex {
+  display: inline-flex; }
+
+@media (min-width: 576px) {
+  .sm\:display-block {
+    display: block; }
+  .sm\:display-inline-block {
+    display: inline-block; }
+  .sm\:display-inline {
+    display: inline; }
+  .sm\:display-table {
+    display: table; }
+  .sm\:display-table-row {
+    display: table-row; }
+  .sm\:display-table-cell {
+    display: table-cell; }
+  .sm\:display-none {
+    display: none; }
+  .sm\:display-flex {
+    display: flex; }
+  .sm\:display-inline-flex {
+    display: inline-flex; } }
+@media (min-width: 768px) {
+  .md\:display-block {
+    display: block; }
+  .md\:display-inline-block {
+    display: inline-block; }
+  .md\:display-inline {
+    display: inline; }
+  .md\:display-table {
+    display: table; }
+  .md\:display-table-row {
+    display: table-row; }
+  .md\:display-table-cell {
+    display: table-cell; }
+  .md\:display-none {
+    display: none; }
+  .md\:display-flex {
+    display: flex; }
+  .md\:display-inline-flex {
+    display: inline-flex; } }
+@media (min-width: 992px) {
+  .lg\:display-block {
+    display: block; }
+  .lg\:display-inline-block {
+    display: inline-block; }
+  .lg\:display-inline {
+    display: inline; }
+  .lg\:display-table {
+    display: table; }
+  .lg\:display-table-row {
+    display: table-row; }
+  .lg\:display-table-cell {
+    display: table-cell; }
+  .lg\:display-none {
+    display: none; }
+  .lg\:display-flex {
+    display: flex; }
+  .lg\:display-inline-flex {
+    display: inline-flex; } }
+@media (min-width: 1200px) {
+  .xl\:display-block {
+    display: block; }
+  .xl\:display-inline-block {
+    display: inline-block; }
+  .xl\:display-inline {
+    display: inline; }
+  .xl\:display-table {
+    display: table; }
+  .xl\:display-table-row {
+    display: table-row; }
+  .xl\:display-table-cell {
+    display: table-cell; }
+  .xl\:display-none {
+    display: none; }
+  .xl\:display-flex {
+    display: flex; }
+  .xl\:display-inline-flex {
+    display: inline-flex; } }
+.float-right {
+  float: right; }
+.float-left {
+  float: left; }
+.float-none {
+  float: none; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media (min-width: 576px) {
+  .sm\:float-right {
+    float: right; }
+  .sm\:float-left {
+    float: left; }
+  .sm\:float-none {
+    float: none; }
+
+  .sm\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both; } }
+@media (min-width: 768px) {
+  .md\:float-right {
+    float: right; }
+  .md\:float-left {
+    float: left; }
+  .md\:float-none {
+    float: none; }
+
+  .md\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both; } }
+@media (min-width: 992px) {
+  .lg\:float-right {
+    float: right; }
+  .lg\:float-left {
+    float: left; }
+  .lg\:float-none {
+    float: none; }
+
+  .lg\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both; } }
+@media (min-width: 1200px) {
+  .xl\:float-right {
+    float: right; }
+  .xl\:float-left {
+    float: left; }
+  .xl\:float-none {
+    float: none; }
+
+  .xl\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both; } }
+.overflow-auto {
+  overflow: auto; }
+.overflow-hidden {
+  overflow: hidden; }
+.overflow-visible {
+  overflow: visible; }
+.overflow-scroll {
+  overflow: scroll; }
+.overflow-x-auto {
+  overflow-x: auto; }
+.overflow-x-hidden {
+  overflow-x: hidden; }
+.overflow-x-visible {
+  overflow-x: visible; }
+.overflow-x-scroll {
+  overflow-x: scroll; }
+.overflow-y-auto {
+  overflow-y: auto; }
+.overflow-y-hidden {
+  overflow-y: hidden; }
+.overflow-y-visible {
+  overflow-y: visible; }
+.overflow-y-scroll {
+  overflow-y: scroll; }
+
+@media (min-width: 576px) {
+  .sm\:overflow-auto {
+    overflow: auto; }
+  .sm\:overflow-hidden {
+    overflow: hidden; }
+  .sm\:overflow-visible {
+    overflow: visible; }
+  .sm\:overflow-scroll {
+    overflow: scroll; }
+  .sm\:overflow-x-auto {
+    overflow-x: auto; }
+  .sm\:overflow-x-hidden {
+    overflow-x: hidden; }
+  .sm\:overflow-x-visible {
+    overflow-x: visible; }
+  .sm\:overflow-x-scroll {
+    overflow-x: scroll; }
+  .sm\:overflow-y-auto {
+    overflow-y: auto; }
+  .sm\:overflow-y-hidden {
+    overflow-y: hidden; }
+  .sm\:overflow-y-visible {
+    overflow-y: visible; }
+  .sm\:overflow-y-scroll {
+    overflow-y: scroll; } }
+@media (min-width: 768px) {
+  .md\:overflow-auto {
+    overflow: auto; }
+  .md\:overflow-hidden {
+    overflow: hidden; }
+  .md\:overflow-visible {
+    overflow: visible; }
+  .md\:overflow-scroll {
+    overflow: scroll; }
+  .md\:overflow-x-auto {
+    overflow-x: auto; }
+  .md\:overflow-x-hidden {
+    overflow-x: hidden; }
+  .md\:overflow-x-visible {
+    overflow-x: visible; }
+  .md\:overflow-x-scroll {
+    overflow-x: scroll; }
+  .md\:overflow-y-auto {
+    overflow-y: auto; }
+  .md\:overflow-y-hidden {
+    overflow-y: hidden; }
+  .md\:overflow-y-visible {
+    overflow-y: visible; }
+  .md\:overflow-y-scroll {
+    overflow-y: scroll; } }
+@media (min-width: 992px) {
+  .lg\:overflow-auto {
+    overflow: auto; }
+  .lg\:overflow-hidden {
+    overflow: hidden; }
+  .lg\:overflow-visible {
+    overflow: visible; }
+  .lg\:overflow-scroll {
+    overflow: scroll; }
+  .lg\:overflow-x-auto {
+    overflow-x: auto; }
+  .lg\:overflow-x-hidden {
+    overflow-x: hidden; }
+  .lg\:overflow-x-visible {
+    overflow-x: visible; }
+  .lg\:overflow-x-scroll {
+    overflow-x: scroll; }
+  .lg\:overflow-y-auto {
+    overflow-y: auto; }
+  .lg\:overflow-y-hidden {
+    overflow-y: hidden; }
+  .lg\:overflow-y-visible {
+    overflow-y: visible; }
+  .lg\:overflow-y-scroll {
+    overflow-y: scroll; } }
+@media (min-width: 1200px) {
+  .xl\:overflow-auto {
+    overflow: auto; }
+  .xl\:overflow-hidden {
+    overflow: hidden; }
+  .xl\:overflow-visible {
+    overflow: visible; }
+  .xl\:overflow-scroll {
+    overflow: scroll; }
+  .xl\:overflow-x-auto {
+    overflow-x: auto; }
+  .xl\:overflow-x-hidden {
+    overflow-x: hidden; }
+  .xl\:overflow-x-visible {
+    overflow-x: visible; }
+  .xl\:overflow-x-scroll {
+    overflow-x: scroll; }
+  .xl\:overflow-y-auto {
+    overflow-y: auto; }
+  .xl\:overflow-y-hidden {
+    overflow-y: hidden; }
+  .xl\:overflow-y-visible {
+    overflow-y: visible; }
+  .xl\:overflow-y-scroll {
+    overflow-y: scroll; } }
+.static {
+  position: static; }
+
+.fixed {
+  position: fixed; }
+
+.absolute {
+  position: absolute; }
+
+.relative {
+  position: relative; }
+
+.sticky {
+  position: sticky; }
+
+@media (min-width: 576px) {
+  .sm\:static {
+    position: static; }
+
+  .sm\:fixed {
+    position: fixed; }
+
+  .sm\:absolute {
+    position: absolute; }
+
+  .sm\:relative {
+    position: relative; }
+
+  .sm\:sticky {
+    position: sticky; } }
+@media (min-width: 768px) {
+  .md\:static {
+    position: static; }
+
+  .md\:fixed {
+    position: fixed; }
+
+  .md\:absolute {
+    position: absolute; }
+
+  .md\:relative {
+    position: relative; }
+
+  .md\:sticky {
+    position: sticky; } }
+@media (min-width: 992px) {
+  .lg\:static {
+    position: static; }
+
+  .lg\:fixed {
+    position: fixed; }
+
+  .lg\:absolute {
+    position: absolute; }
+
+  .lg\:relative {
+    position: relative; }
+
+  .lg\:sticky {
+    position: sticky; } }
+@media (min-width: 1200px) {
+  .xl\:static {
+    position: static; }
+
+  .xl\:fixed {
+    position: fixed; }
+
+  .xl\:absolute {
+    position: absolute; }
+
+  .xl\:relative {
+    position: relative; }
+
+  .xl\:sticky {
+    position: sticky; } }
+.visible {
+  visibility: visible; }
+
+.hidden {
+  visibility: hidden; }
+
+@media (min-width: 576px) {
+  .sm\:visible {
+    visibility: visible; }
+
+  .sm\:hidden {
+    visibility: hidden; } }
+@media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible; }
+
+  .md\:hidden {
+    visibility: hidden; } }
+@media (min-width: 992px) {
+  .lg\:visible {
+    visibility: visible; }
+
+  .lg\:hidden {
+    visibility: hidden; } }
+@media (min-width: 1200px) {
+  .xl\:visible {
+    visibility: visible; }
+
+  .xl\:hidden {
+    visibility: hidden; } }
+.z-0 {
+  z-index: 0; }
+
+.z-10 {
+  z-index: 10; }
+
+.z-20 {
+  z-index: 20; }
+
+.z-30 {
+  z-index: 30; }
+
+.z-40 {
+  z-index: 40; }
+
+.z-50 {
+  z-index: 50; }
+
+.z-auto {
+  z-index: auto; }
+
+@media (min-width: 576px) {
+  .sm\:z-0 {
+    z-index: 0; }
+
+  .sm\:z-10 {
+    z-index: 10; }
+
+  .sm\:z-20 {
+    z-index: 20; }
+
+  .sm\:z-30 {
+    z-index: 30; }
+
+  .sm\:z-40 {
+    z-index: 40; }
+
+  .sm\:z-50 {
+    z-index: 50; }
+
+  .sm\:z-auto {
+    z-index: auto; } }
+@media (min-width: 768px) {
+  .md\:z-0 {
+    z-index: 0; }
+
+  .md\:z-10 {
+    z-index: 10; }
+
+  .md\:z-20 {
+    z-index: 20; }
+
+  .md\:z-30 {
+    z-index: 30; }
+
+  .md\:z-40 {
+    z-index: 40; }
+
+  .md\:z-50 {
+    z-index: 50; }
+
+  .md\:z-auto {
+    z-index: auto; } }
+@media (min-width: 992px) {
+  .lg\:z-0 {
+    z-index: 0; }
+
+  .lg\:z-10 {
+    z-index: 10; }
+
+  .lg\:z-20 {
+    z-index: 20; }
+
+  .lg\:z-30 {
+    z-index: 30; }
+
+  .lg\:z-40 {
+    z-index: 40; }
+
+  .lg\:z-50 {
+    z-index: 50; }
+
+  .lg\:z-auto {
+    z-index: auto; } }
+@media (min-width: 1200px) {
+  .xl\:z-0 {
+    z-index: 0; }
+
+  .xl\:z-10 {
+    z-index: 10; }
+
+  .xl\:z-20 {
+    z-index: 20; }
+
+  .xl\:z-30 {
+    z-index: 30; }
+
+  .xl\:z-40 {
+    z-index: 40; }
+
+  .xl\:z-50 {
+    z-index: 50; }
+
+  .xl\:z-auto {
+    z-index: auto; } }
+.font-sans {
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
+.font-serif {
+  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif; }
+.font-mono {
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace; }
+.font-italic {
+  font-style: italic; }
+.font-roman {
+  font-style: normal; }
+.font-antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+.font-xs {
+  font-size: 0.75rem; }
+.font-sm {
+  font-size: 0.875rem; }
+.font-base {
+  font-size: 1rem; }
+.font-lg {
+  font-size: 1.125rem; }
+.font-xl {
+  font-size: 1.25rem; }
+.font-2xl {
+  font-size: 1.5rem; }
+.font-3xl {
+  font-size: 1.875rem; }
+.font-4xl {
+  font-size: 2.25rem; }
+.font-5xl {
+  font-size: 3rem; }
+.font-thin {
+  font-weight: 200; }
+.font-light {
+  font-weight: 300; }
+.font-normal {
+  font-weight: 400; }
+.font-medium {
+  font-weight: 500; }
+.font-bold {
+  font-weight: 700; }
+.font-bolder {
+  font-weight: 800; }
+
+@media (min-width: 576px) {
+  .sm\:font-italic {
+    font-style: italic; }
+  .sm\:font-roman {
+    font-style: normal; }
+  .sm\:font-antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .sm\:font-xs {
+    font-size: 0.75rem; }
+  .sm\:font-sm {
+    font-size: 0.875rem; }
+  .sm\:font-base {
+    font-size: 1rem; }
+  .sm\:font-lg {
+    font-size: 1.125rem; }
+  .sm\:font-xl {
+    font-size: 1.25rem; }
+  .sm\:font-2xl {
+    font-size: 1.5rem; }
+  .sm\:font-3xl {
+    font-size: 1.875rem; }
+  .sm\:font-4xl {
+    font-size: 2.25rem; }
+  .sm\:font-5xl {
+    font-size: 3rem; }
+  .sm\:font-thin {
+    font-weight: 200; }
+  .sm\:font-light {
+    font-weight: 300; }
+  .sm\:font-normal {
+    font-weight: 400; }
+  .sm\:font-medium {
+    font-weight: 500; }
+  .sm\:font-bold {
+    font-weight: 700; }
+  .sm\:font-bolder {
+    font-weight: 800; } }
+@media (min-width: 768px) {
+  .md\:font-italic {
+    font-style: italic; }
+  .md\:font-roman {
+    font-style: normal; }
+  .md\:font-antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .md\:font-xs {
+    font-size: 0.75rem; }
+  .md\:font-sm {
+    font-size: 0.875rem; }
+  .md\:font-base {
+    font-size: 1rem; }
+  .md\:font-lg {
+    font-size: 1.125rem; }
+  .md\:font-xl {
+    font-size: 1.25rem; }
+  .md\:font-2xl {
+    font-size: 1.5rem; }
+  .md\:font-3xl {
+    font-size: 1.875rem; }
+  .md\:font-4xl {
+    font-size: 2.25rem; }
+  .md\:font-5xl {
+    font-size: 3rem; }
+  .md\:font-thin {
+    font-weight: 200; }
+  .md\:font-light {
+    font-weight: 300; }
+  .md\:font-normal {
+    font-weight: 400; }
+  .md\:font-medium {
+    font-weight: 500; }
+  .md\:font-bold {
+    font-weight: 700; }
+  .md\:font-bolder {
+    font-weight: 800; } }
+@media (min-width: 992px) {
+  .lg\:font-italic {
+    font-style: italic; }
+  .lg\:font-roman {
+    font-style: normal; }
+  .lg\:font-antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .lg\:font-xs {
+    font-size: 0.75rem; }
+  .lg\:font-sm {
+    font-size: 0.875rem; }
+  .lg\:font-base {
+    font-size: 1rem; }
+  .lg\:font-lg {
+    font-size: 1.125rem; }
+  .lg\:font-xl {
+    font-size: 1.25rem; }
+  .lg\:font-2xl {
+    font-size: 1.5rem; }
+  .lg\:font-3xl {
+    font-size: 1.875rem; }
+  .lg\:font-4xl {
+    font-size: 2.25rem; }
+  .lg\:font-5xl {
+    font-size: 3rem; }
+  .lg\:font-thin {
+    font-weight: 200; }
+  .lg\:font-light {
+    font-weight: 300; }
+  .lg\:font-normal {
+    font-weight: 400; }
+  .lg\:font-medium {
+    font-weight: 500; }
+  .lg\:font-bold {
+    font-weight: 700; }
+  .lg\:font-bolder {
+    font-weight: 800; } }
+@media (min-width: 1200px) {
+  .xl\:font-italic {
+    font-style: italic; }
+  .xl\:font-roman {
+    font-style: normal; }
+  .xl\:font-antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .xl\:font-xs {
+    font-size: 0.75rem; }
+  .xl\:font-sm {
+    font-size: 0.875rem; }
+  .xl\:font-base {
+    font-size: 1rem; }
+  .xl\:font-lg {
+    font-size: 1.125rem; }
+  .xl\:font-xl {
+    font-size: 1.25rem; }
+  .xl\:font-2xl {
+    font-size: 1.5rem; }
+  .xl\:font-3xl {
+    font-size: 1.875rem; }
+  .xl\:font-4xl {
+    font-size: 2.25rem; }
+  .xl\:font-5xl {
+    font-size: 3rem; }
+  .xl\:font-thin {
+    font-weight: 200; }
+  .xl\:font-light {
+    font-weight: 300; }
+  .xl\:font-normal {
+    font-weight: 400; }
+  .xl\:font-medium {
+    font-weight: 500; }
+  .xl\:font-bold {
+    font-weight: 700; }
+  .xl\:font-bolder {
+    font-weight: 800; } }
 .container {
   width: 100%;
   margin: 0 auto; }

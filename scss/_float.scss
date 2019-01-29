@@ -1,0 +1,28 @@
+.float {
+  @each $value in (right, left, none) {
+    &-#{$value} {
+      float: $value;
+    }
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@each $bname, $breakpoint in $breakpoints {
+  @media(min-width: $breakpoint) {
+    .#{$bname}\:float {
+      @each $value in (right, left, none) {
+        &-#{$value} {
+          float: $value;
+        }
+      }
+    }
+    .#{$bname}\:clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}

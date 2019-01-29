@@ -1,0 +1,32 @@
+.overflow {
+  @each $value in (auto, hidden, visible, scroll) {
+    &-#{$value} {
+      overflow: $value;
+    }
+  }
+  @each $orientation in (x, y) {
+    @each $value in (auto, hidden, visible, scroll) {
+      &-#{$orientation}-#{$value} {
+        overflow-#{$orientation}: $value;
+      }
+    }
+  }
+}
+@each $bname, $breakpoint in $breakpoints {
+  @media(min-width: $breakpoint) {
+    .#{$bname}\:overflow {
+      @each $value in (auto, hidden, visible, scroll) {
+        &-#{$value} {
+          overflow: $value;
+        }
+      }
+      @each $orientation in (x, y) {
+        @each $value in (auto, hidden, visible, scroll) {
+          &-#{$orientation}-#{$value} {
+            overflow-#{$orientation}: $value;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.display {
+  @each $value in (block, inline-block, inline, table, table-row, table-cell, none, flex, inline-flex) {
+    &-#{$value} {
+      display: $value;
+    }
+  }
+}
+@each $bname, $breakpoint in $breakpoints {
+  @media(min-width: $breakpoint) {
+    .#{$bname}\:display {
+      @each $value in (block, inline-block, inline, table, table-row, table-cell, none, flex, inline-flex) {
+        &-#{$value} {
+          display: $value;
+        }
+      }
+    }
+  }
+}

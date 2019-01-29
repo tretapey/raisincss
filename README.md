@@ -11,6 +11,152 @@ An Utility CSS only library
 - `lg`: 992px and up
 - `xl`: 1200px and up
 
+### Utils
+
+#### Display
+
+We can set the display property as follows:
+
+- `.display-block`
+- `.display-inline-block`
+- `.display-inline`
+- `.display-table`
+- `.display-table`
+- `.display-table-row`
+- `.display-table-cell`
+- `.display-none`
+
+Note: Flex display in a different section
+
+Also we can use the breakpoints prefixes, i.e:
+
+- `.sm:display-none`
+- `.md:display-block`
+- `.lg:display-inline`
+- `.xl:display-table`
+
+#### Float
+
+- `.float-right`
+- `.float-left`
+- `.float-none`
+- `.clearfix`
+
+or:
+
+- `.sm:float-right`
+- `.md:float-left`
+- `.lg:float-none`
+- `.xl:clearfix`
+
+#### Overflow
+
+- `.overflow-auto`
+- `.overflow-hidden`
+- `.overflow-visible`
+- `.overflow-x-auto`
+- `.overflow-x-hidden`
+- `.overflow-x-visible`
+- `.overflow-y-auto`
+- `.overflow-y-hidden`
+- `.overflow-y-visible`
+
+or:
+
+- `.sm:overflow-auto`
+- `.md:overflow-hidden`
+- `.lg:overflow-x-none`
+- `.xl:overflow-y-scroll`
+
+#### Position
+
+- `.static`
+- `.fixed`
+- `.absolute`
+- `.relative`
+- `.sticky`
+
+or:
+
+- `.sm:static`
+- `.md:fixed`
+- `.lg:absolute`
+- `.xl:relative`
+- `.md:sticky`
+
+#### Visibility
+
+- `.visible`
+- `.hidden`
+
+or:
+
+- `.sm.visible`
+- `.md.hidden`
+
+#### Z-index
+
+- `.z-0`
+- `.z-10`
+- `.z-15`
+- `.z-20`
+- `.z-25`
+- `.z-30`
+- `.z-35`
+- `.z-40`
+- `.z-45`
+- `.z-50`
+- `.z-auto`
+
+or:
+
+- `.sm:z-0`
+- `.md:z-10`
+- `.lg:z-25`
+- `.xl:z-auto`
+
+#### Font
+
+Setting font-family:
+
+- `.font-sans`
+- `.font-serif`
+- `.font-mono`
+
+Setting font-style:
+
+- `.font-italic`
+- `.font-roman`
+- `.font-antialiased`
+
+Setting font-weight:
+
+- `.font-thin` //200
+- `.font-light` //300
+- `.font-normal` //400
+- `.font-medium` //500
+- `.font-bold` //700
+- `.font-bolder` //800
+
+Setting font-size:
+
+- `.font-xs` //.75rem
+- `.font-sm` //.875rem
+- `.font-base` //1rem
+- `.font-lg` //1.125rem
+- `.font-xl` //1.25rem
+- `.font-2xl` //1.5rem
+- `.font-3xl` //1.875rem
+- `.font-4xl` //2.25rem
+- `.font-5xl` //3rem
+
+We can use breackpoint prefixes on this classes also (except font-family), i.e:
+
+- `.sm:font-italic`
+- `.md:font-thin`
+- `.lg:font-xs`
+- `.xl:font-bolder`
+
 ### Container
 
 Any element with the `.container` class will be centered on screen; with each breakpoint the container goes:

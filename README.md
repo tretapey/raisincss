@@ -33,7 +33,7 @@ We can use grid on each breakpoint adding the prefix:
  `lg:is-grid`
  `xl:is-grid`
 
-By default we are adding `grid-template-columns:auto` and `grid-template-rows:auto` to an `.is-grid` element. For setting the columsn and rows to the grid we can add:
+By default we are adding `grid-template-columns:auto` and `grid-template-rows:auto` to an `.is-grid` element. For setting the columns and rows to the grid we can add:
 
 - `.has-{1 to 12}-columns` or
 - `.has-{1 to 12}-rows` 
@@ -115,7 +115,7 @@ Here an example of a layout grid:
     column-gap-10 
     lg:column-gap-15 
     row-gap-10 
-    justify-grid-items-stretch" style="height:80vh">
+    justify-items-stretch" style="height:80vh">
     <div class="header 
       from-column-1 
       column-span-12 

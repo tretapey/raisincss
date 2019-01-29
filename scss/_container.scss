@@ -1,0 +1,21 @@
+$breakpoints-and-widths: (
+  (576px, 540px)
+  (768px, 720px)
+  (992px, 960px)
+  (1200px, 1140px)
+);
+
+.container {
+  width:100%;
+  margin:0 auto;
+
+  @each $breakpoint, $max-breakpoint-width in $breakpoints-and-widths {
+    @media(min-width: $breakpoint) {
+      max-width: $max-breakpoint-width;
+    }
+  }
+
+  &-fluid {
+    min-width:100%;
+  }
+}

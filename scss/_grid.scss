@@ -1,0 +1,158 @@
+// ensure that the browser supports it
+@supports(grid-area:auto) {
+  .is-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  @each $bname, $breakpoint in $breakpoints {
+    @media(min-width: $breakpoint) {
+      .#{$bname}\:is-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+      }
+    }
+  }
+
+  @for $n from 1 through 12 {
+    .has-#{$n}-columns {
+      grid-template-columns: repeat($n, 1fr);
+    }
+    .has-#{$n}-rows {
+      grid-template-rows: repeat($n, 1fr);
+    }
+
+    .column-gap-#{$n*5} {
+      grid-column-gap: $n*5px;
+    }
+    .row-gap-#{$n*5} {
+      grid-row-gap: $n*5px;
+    }
+
+    //grid items
+    .from-column-#{$n} {
+      grid-column-start: $n;
+    }
+    .to-column-#{$n} {
+      grid-column-end: $n+1;
+    }
+    .column-span-#{$n} {
+      grid-column-end: span $n;
+    }
+    .from-row-#{$n} {
+      grid-row-start: $n;
+    }
+    .to-row-#{$n} {
+      grid-row-end: $n+1;
+    }
+    .row-span-#{$n} {
+      grid-row-end: span $n;
+    }
+  }
+
+  @each $value in (start, end, center, stretch) {
+    .justify-items-#{$value} {
+      justify-items: $value;
+    }
+    .align-items-#{$value} {
+      align-items: $value;
+    }
+
+    //grid items
+    .justify-self-#{$value} {
+      justify-self: $value;
+    }
+    .align-self-#{$value} {
+      align-self: $value;
+    }
+  }
+
+  @each $value in (start, end, center, stretch, space-around, space-between, space-evenly) {
+    .justify-content-#{$value} {
+      justify-content: $value;
+    }
+    .align-content-#{$value} {
+      align-content: $value
+    }
+  }
+
+  @each $direction in (row, column) {
+    .auto-flow-#{$direction} {
+      grid-auto-flow: $direction;
+    }
+  }
+
+  @each $bname, $breakpoint in $breakpoints {
+    @media(min-width: $breakpoint) {
+      @for $n from 1 through 12 {
+        .#{$bname}\:has-#{$n}-columns {
+          grid-template-columns: repeat($n, 1fr);
+        }
+        .#{$bname}\:has-#{$n}-rows {
+          grid-template-rows: repeat($n, 1fr);
+        }
+
+        .#{$bname}\:column-gap-#{$n*5} {
+          grid-column-gap: $n*5px;
+        }
+        .#{$bname}\:row-gap-#{$n*5} {
+          grid-row-gap: $n*5px;
+        }
+
+        //grid items
+        .#{$bname}\:from-column-#{$n} {
+          grid-column-start: $n;
+        }
+        .#{$bname}\:to-column-#{$n} {
+          grid-column-end: $n+1;
+        }
+        .#{$bname}\:column-span-#{$n} {
+          grid-column-end: span $n;
+        }
+        .#{$bname}\:from-row-#{$n} {
+          grid-row-start: $n;
+        }
+        .#{$bname}\:to-row-#{$n} {
+          grid-row-end: $n+1;
+        }
+        .#{$bname}\:row-span-#{$n} {
+          grid-row-end: span $n;
+        }
+      }
+
+      @each $value in (start, end, center, stretch) {
+        .#{$bname}\:justify-items-#{$value} {
+          justify-items: $value;
+        }
+        .#{$bname}\:align-items-#{$value} {
+          align-items: $value;
+        }
+
+        //grid items
+        .#{$bname}\:justify-self-#{$value} {
+          justify-self: $value;
+        }
+        .#{$bname}\:align-self-#{$value} {
+          align-self: $value;
+        }
+      }
+
+      @each $value in (start, end, center, stretch, space-around, space-between, space-evenly) {
+        .#{$bname}\:justify-content-#{$value} {
+          justify-content: $value;
+        }
+        .#{$bname}\:align-content-#{$value} {
+          align-content: $value
+        }
+      }
+
+      @each $direction in (row, column) {
+        .#{$bname}\:auto-flow-#{$direction} {
+          grid-auto-flow: $direction;
+        }
+      }
+    }
+  }
+}

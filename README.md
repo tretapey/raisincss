@@ -4,7 +4,6 @@ An Utility CSS only library
 
 ### TODO:
 
-- Margin and padding
 - Border
 - Opacity
 - Width and height
@@ -122,6 +121,79 @@ or:
 - `.md:z-10`
 - `.lg:z-25`
 - `.xl:z-auto`
+
+#### Margin
+
+- `.m-0` -> `margin: 0rem`
+- `.m-1` -> `margin: 0.25rem`
+- `.m-2` -> `margin: 0.5rem`
+- `.m-3` -> `margin: 0.75rem`
+- `.m-4` -> `margin: 1rem`
+- `.m-5` -> `margin: 1.25rem`
+- `.m-6` -> `margin: 1.5rem`
+- `.m-7` -> `margin: 1.75rem`
+- `.m-8` -> `margin: 2rem`
+- `.m-9` -> `margin: 2.25rem`
+- `.m-10` -> `margin: 2.5rem`
+- `.m-11` -> `margin: 2.75rem`
+- `.m-12` -> `margin: 3rem`
+
+We can also use top, right, bottom and left margins:
+
+- `.mt-{0 to 12}` -> `margin-top: {0 to 3}rem`
+- `.mr-{0 to 12}` -> `margin-right: {0 to 3}rem`
+- `.mb-{0 to 12}` -> `margin-bottom: {0 to 3}rem`
+- `.ml-{0 to 12}` -> `margin-left: {0 to 3}rem`
+
+Or use the x and y margins:
+
+- `.mx-{0 to 12}`
+- `.my-{0 to 12}`
+- `.mx-auto`
+- `.ml-auto`
+
+And we can use any breakpoint prefix, i.e:
+
+
+- `.sm:m-4`
+- `.md:mb-12`
+- `.lg:mx-auto`
+- `.xl:mr-0`
+
+#### Padding
+
+- `.p-0` -> `padding: 0rem`
+- `.p-1` -> `padding: 0.25rem`
+- `.p-2` -> `padding: 0.5rem`
+- `.p-3` -> `padding: 0.75rem`
+- `.p-4` -> `padding: 1rem`
+- `.p-5` -> `padding: 1.25rem`
+- `.p-6` -> `padding: 1.5rem`
+- `.p-7` -> `padding: 1.75rem`
+- `.p-8` -> `padding: 2rem`
+- `.p-9` -> `padding: 2.25rem`
+- `.p-10` -> `padding: 2.5rem`
+- `.p-11` -> `padding: 2.75rem`
+- `.p-12` -> `padding: 3rem`
+
+We can also use top, right, bottom and left paddings:
+
+- `.pt-{0 to 12}` -> `padding-top: {0 to 3}rem`
+- `.pr-{0 to 12}` -> `padding-right: {0 to 3}rem`
+- `.pb-{0 to 12}` -> `padding-bottom: {0 to 3}rem`
+- `.pl-{0 to 12}` -> `padding-left: {0 to 3}rem`
+
+Or use the x and y paddings:
+
+- `.px-{0 to 12}`
+- `.py-{0 to 12}`
+
+And we can use any breakpoint prefix, i.e:
+
+- `.sm:p-4`
+- `.md:pb-12`
+- `.lg:px-2`
+- `.xl:pr-0`
 
 #### Font
 

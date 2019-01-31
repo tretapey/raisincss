@@ -179,14 +179,14 @@ Using the `.container-fluid` class the element will go 100% width on every scree
 
 ### CSS Grid
 
-Adding the class `.is-grid` to any element will add the `display:grid` property to it.
+Adding the class `.grid` to any element will add the `display:grid` property to it.
 
 We can use grid on each breakpoint adding the prefix:
 
- `sm:is-grid`
- `md:is-grid`
- `lg:is-grid`
- `xl:is-grid`
+ `sm:grid`
+ `md:grid`
+ `lg:grid`
+ `xl:grid`
 
 By default we are adding `grid-template-columns:auto` and `grid-template-rows:auto` to an `.is-grid` element. For setting the columns and rows to the grid we can add:
 
@@ -196,7 +196,7 @@ By default we are adding `grid-template-columns:auto` and `grid-template-rows:au
 Note: Each columns or row will be `1fr` sized. i.e: 
 
 ```html
-<div class="is-grid has-12-columns has-4-rows"></div>
+<div class="my-element grid has-12-columns has-4-rows"></div>
 ```
 Will have this css properties:
 ```css
@@ -243,12 +243,12 @@ Any of this classes listed above can be used with a breakpoint prefix, i.e:
 
 Any items inside the grid will be auto positioned, we can use this classes on a grid item to change that`:
 
-- `.from-column-{1 to 12}`
-- `.to-column-{1 to 12}`
+- `.column-start-{1 to 12}`
+- `.column-end-{1 to 12}`
 - `.column-span-{1 to 12}`
 
-- `.from-row-{1 to 12}`
-- `.to-row-{1 to 12}`
+- `.row-start-{1 to 12}`
+- `.row-end-{1 to 12}`
 - `.row-span-{1 to 12}`
 
 Also we can use on any grid item:
@@ -264,7 +264,7 @@ And of course we can add any breakpoint prefix, i.e:
 Here an example of a layout grid:
 ```html
   <div class="container 
-    md:is-grid 
+    md:grid 
     has-12-columns 
     has-4-rows
     column-gap-10 
@@ -272,21 +272,21 @@ Here an example of a layout grid:
     row-gap-10 
     justify-items-stretch" style="height:80vh">
     <div class="header 
-      from-column-1 
+      column-start-1 
       column-span-12 
       row-span-1" style="background:red; min-height: 100px"></div>
     <div class="main 
-      from-column-4 
-      to-column-12 
+      column-start-4 
+      column-end-12 
       row-span-2" style="background:green; min-height: 100px"></div>
     <div class="aside 
-      from-column-1 
-      from-row-2
+      column-start-1 
+      row-start-2
       column-span-3 
       row-span-2" style="background:blue; min-height: 100px"></div>
     <div class="footer 
-      from-column-1 
-      to-column-12 
-      from-row-4" style="background:yellow; min-height: 100px"></div>
+      column-start-1 
+      column-end-12 
+      row-start-4" style="background:yellow; min-height: 100px"></div>
   </div>
 ```

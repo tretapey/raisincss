@@ -1050,28 +1050,28 @@ table {
     min-width: 100%; }
 
 @supports (grid-area: auto) {
-  .is-grid {
+  .grid {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto; }
 
   @media (min-width: 576px) {
-    .sm\:is-grid {
+    .sm\:grid {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: auto; } }
   @media (min-width: 768px) {
-    .md\:is-grid {
+    .md\:grid {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: auto; } }
   @media (min-width: 992px) {
-    .lg\:is-grid {
+    .lg\:grid {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: auto; } }
   @media (min-width: 1200px) {
-    .xl\:is-grid {
+    .xl\:grid {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: auto; } }
@@ -1087,19 +1087,19 @@ table {
   .row-gap-5 {
     grid-row-gap: 5px; }
 
-  .from-column-1 {
+  .column-start-1 {
     grid-column-start: 1; }
 
-  .to-column-1 {
+  .column-end-1 {
     grid-column-end: 2; }
 
   .column-span-1 {
     grid-column-end: span 1; }
 
-  .from-row-1 {
+  .row-start-1 {
     grid-row-start: 1; }
 
-  .to-row-1 {
+  .row-end-1 {
     grid-row-end: 2; }
 
   .row-span-1 {
@@ -1117,19 +1117,19 @@ table {
   .row-gap-10 {
     grid-row-gap: 10px; }
 
-  .from-column-2 {
+  .column-start-2 {
     grid-column-start: 2; }
 
-  .to-column-2 {
+  .column-end-2 {
     grid-column-end: 3; }
 
   .column-span-2 {
     grid-column-end: span 2; }
 
-  .from-row-2 {
+  .row-start-2 {
     grid-row-start: 2; }
 
-  .to-row-2 {
+  .row-end-2 {
     grid-row-end: 3; }
 
   .row-span-2 {
@@ -1147,19 +1147,19 @@ table {
   .row-gap-15 {
     grid-row-gap: 15px; }
 
-  .from-column-3 {
+  .column-start-3 {
     grid-column-start: 3; }
 
-  .to-column-3 {
+  .column-end-3 {
     grid-column-end: 4; }
 
   .column-span-3 {
     grid-column-end: span 3; }
 
-  .from-row-3 {
+  .row-start-3 {
     grid-row-start: 3; }
 
-  .to-row-3 {
+  .row-end-3 {
     grid-row-end: 4; }
 
   .row-span-3 {
@@ -1177,19 +1177,19 @@ table {
   .row-gap-20 {
     grid-row-gap: 20px; }
 
-  .from-column-4 {
+  .column-start-4 {
     grid-column-start: 4; }
 
-  .to-column-4 {
+  .column-end-4 {
     grid-column-end: 5; }
 
   .column-span-4 {
     grid-column-end: span 4; }
 
-  .from-row-4 {
+  .row-start-4 {
     grid-row-start: 4; }
 
-  .to-row-4 {
+  .row-end-4 {
     grid-row-end: 5; }
 
   .row-span-4 {
@@ -1207,19 +1207,19 @@ table {
   .row-gap-25 {
     grid-row-gap: 25px; }
 
-  .from-column-5 {
+  .column-start-5 {
     grid-column-start: 5; }
 
-  .to-column-5 {
+  .column-end-5 {
     grid-column-end: 6; }
 
   .column-span-5 {
     grid-column-end: span 5; }
 
-  .from-row-5 {
+  .row-start-5 {
     grid-row-start: 5; }
 
-  .to-row-5 {
+  .row-end-5 {
     grid-row-end: 6; }
 
   .row-span-5 {
@@ -1237,19 +1237,19 @@ table {
   .row-gap-30 {
     grid-row-gap: 30px; }
 
-  .from-column-6 {
+  .column-start-6 {
     grid-column-start: 6; }
 
-  .to-column-6 {
+  .column-end-6 {
     grid-column-end: 7; }
 
   .column-span-6 {
     grid-column-end: span 6; }
 
-  .from-row-6 {
+  .row-start-6 {
     grid-row-start: 6; }
 
-  .to-row-6 {
+  .row-end-6 {
     grid-row-end: 7; }
 
   .row-span-6 {
@@ -1267,19 +1267,19 @@ table {
   .row-gap-35 {
     grid-row-gap: 35px; }
 
-  .from-column-7 {
+  .column-start-7 {
     grid-column-start: 7; }
 
-  .to-column-7 {
+  .column-end-7 {
     grid-column-end: 8; }
 
   .column-span-7 {
     grid-column-end: span 7; }
 
-  .from-row-7 {
+  .row-start-7 {
     grid-row-start: 7; }
 
-  .to-row-7 {
+  .row-end-7 {
     grid-row-end: 8; }
 
   .row-span-7 {
@@ -1297,19 +1297,19 @@ table {
   .row-gap-40 {
     grid-row-gap: 40px; }
 
-  .from-column-8 {
+  .column-start-8 {
     grid-column-start: 8; }
 
-  .to-column-8 {
+  .column-end-8 {
     grid-column-end: 9; }
 
   .column-span-8 {
     grid-column-end: span 8; }
 
-  .from-row-8 {
+  .row-start-8 {
     grid-row-start: 8; }
 
-  .to-row-8 {
+  .row-end-8 {
     grid-row-end: 9; }
 
   .row-span-8 {
@@ -1327,19 +1327,19 @@ table {
   .row-gap-45 {
     grid-row-gap: 45px; }
 
-  .from-column-9 {
+  .column-start-9 {
     grid-column-start: 9; }
 
-  .to-column-9 {
+  .column-end-9 {
     grid-column-end: 10; }
 
   .column-span-9 {
     grid-column-end: span 9; }
 
-  .from-row-9 {
+  .row-start-9 {
     grid-row-start: 9; }
 
-  .to-row-9 {
+  .row-end-9 {
     grid-row-end: 10; }
 
   .row-span-9 {
@@ -1357,19 +1357,19 @@ table {
   .row-gap-50 {
     grid-row-gap: 50px; }
 
-  .from-column-10 {
+  .column-start-10 {
     grid-column-start: 10; }
 
-  .to-column-10 {
+  .column-end-10 {
     grid-column-end: 11; }
 
   .column-span-10 {
     grid-column-end: span 10; }
 
-  .from-row-10 {
+  .row-start-10 {
     grid-row-start: 10; }
 
-  .to-row-10 {
+  .row-end-10 {
     grid-row-end: 11; }
 
   .row-span-10 {
@@ -1387,19 +1387,19 @@ table {
   .row-gap-55 {
     grid-row-gap: 55px; }
 
-  .from-column-11 {
+  .column-start-11 {
     grid-column-start: 11; }
 
-  .to-column-11 {
+  .column-end-11 {
     grid-column-end: 12; }
 
   .column-span-11 {
     grid-column-end: span 11; }
 
-  .from-row-11 {
+  .row-start-11 {
     grid-row-start: 11; }
 
-  .to-row-11 {
+  .row-end-11 {
     grid-row-end: 12; }
 
   .row-span-11 {
@@ -1417,19 +1417,19 @@ table {
   .row-gap-60 {
     grid-row-gap: 60px; }
 
-  .from-column-12 {
+  .column-start-12 {
     grid-column-start: 12; }
 
-  .to-column-12 {
+  .column-end-12 {
     grid-column-end: 13; }
 
   .column-span-12 {
     grid-column-end: span 12; }
 
-  .from-row-12 {
+  .row-start-12 {
     grid-row-start: 12; }
 
-  .to-row-12 {
+  .row-end-12 {
     grid-row-end: 13; }
 
   .row-span-12 {
@@ -1544,19 +1544,19 @@ table {
     .sm\:row-gap-5 {
       grid-row-gap: 5px; }
 
-    .sm\:from-column-1 {
+    .sm\:column-start-1 {
       grid-column-start: 1; }
 
-    .sm\:to-column-1 {
+    .sm\:column-end-1 {
       grid-column-end: 2; }
 
     .sm\:column-span-1 {
       grid-column-end: span 1; }
 
-    .sm\:from-row-1 {
+    .sm\:row-start-1 {
       grid-row-start: 1; }
 
-    .sm\:to-row-1 {
+    .sm\:row-end-1 {
       grid-row-end: 2; }
 
     .sm\:row-span-1 {
@@ -1574,19 +1574,19 @@ table {
     .sm\:row-gap-10 {
       grid-row-gap: 10px; }
 
-    .sm\:from-column-2 {
+    .sm\:column-start-2 {
       grid-column-start: 2; }
 
-    .sm\:to-column-2 {
+    .sm\:column-end-2 {
       grid-column-end: 3; }
 
     .sm\:column-span-2 {
       grid-column-end: span 2; }
 
-    .sm\:from-row-2 {
+    .sm\:row-start-2 {
       grid-row-start: 2; }
 
-    .sm\:to-row-2 {
+    .sm\:row-end-2 {
       grid-row-end: 3; }
 
     .sm\:row-span-2 {
@@ -1604,19 +1604,19 @@ table {
     .sm\:row-gap-15 {
       grid-row-gap: 15px; }
 
-    .sm\:from-column-3 {
+    .sm\:column-start-3 {
       grid-column-start: 3; }
 
-    .sm\:to-column-3 {
+    .sm\:column-end-3 {
       grid-column-end: 4; }
 
     .sm\:column-span-3 {
       grid-column-end: span 3; }
 
-    .sm\:from-row-3 {
+    .sm\:row-start-3 {
       grid-row-start: 3; }
 
-    .sm\:to-row-3 {
+    .sm\:row-end-3 {
       grid-row-end: 4; }
 
     .sm\:row-span-3 {
@@ -1634,19 +1634,19 @@ table {
     .sm\:row-gap-20 {
       grid-row-gap: 20px; }
 
-    .sm\:from-column-4 {
+    .sm\:column-start-4 {
       grid-column-start: 4; }
 
-    .sm\:to-column-4 {
+    .sm\:column-end-4 {
       grid-column-end: 5; }
 
     .sm\:column-span-4 {
       grid-column-end: span 4; }
 
-    .sm\:from-row-4 {
+    .sm\:row-start-4 {
       grid-row-start: 4; }
 
-    .sm\:to-row-4 {
+    .sm\:row-end-4 {
       grid-row-end: 5; }
 
     .sm\:row-span-4 {
@@ -1664,19 +1664,19 @@ table {
     .sm\:row-gap-25 {
       grid-row-gap: 25px; }
 
-    .sm\:from-column-5 {
+    .sm\:column-start-5 {
       grid-column-start: 5; }
 
-    .sm\:to-column-5 {
+    .sm\:column-end-5 {
       grid-column-end: 6; }
 
     .sm\:column-span-5 {
       grid-column-end: span 5; }
 
-    .sm\:from-row-5 {
+    .sm\:row-start-5 {
       grid-row-start: 5; }
 
-    .sm\:to-row-5 {
+    .sm\:row-end-5 {
       grid-row-end: 6; }
 
     .sm\:row-span-5 {
@@ -1694,19 +1694,19 @@ table {
     .sm\:row-gap-30 {
       grid-row-gap: 30px; }
 
-    .sm\:from-column-6 {
+    .sm\:column-start-6 {
       grid-column-start: 6; }
 
-    .sm\:to-column-6 {
+    .sm\:column-end-6 {
       grid-column-end: 7; }
 
     .sm\:column-span-6 {
       grid-column-end: span 6; }
 
-    .sm\:from-row-6 {
+    .sm\:row-start-6 {
       grid-row-start: 6; }
 
-    .sm\:to-row-6 {
+    .sm\:row-end-6 {
       grid-row-end: 7; }
 
     .sm\:row-span-6 {
@@ -1724,19 +1724,19 @@ table {
     .sm\:row-gap-35 {
       grid-row-gap: 35px; }
 
-    .sm\:from-column-7 {
+    .sm\:column-start-7 {
       grid-column-start: 7; }
 
-    .sm\:to-column-7 {
+    .sm\:column-end-7 {
       grid-column-end: 8; }
 
     .sm\:column-span-7 {
       grid-column-end: span 7; }
 
-    .sm\:from-row-7 {
+    .sm\:row-start-7 {
       grid-row-start: 7; }
 
-    .sm\:to-row-7 {
+    .sm\:row-end-7 {
       grid-row-end: 8; }
 
     .sm\:row-span-7 {
@@ -1754,19 +1754,19 @@ table {
     .sm\:row-gap-40 {
       grid-row-gap: 40px; }
 
-    .sm\:from-column-8 {
+    .sm\:column-start-8 {
       grid-column-start: 8; }
 
-    .sm\:to-column-8 {
+    .sm\:column-end-8 {
       grid-column-end: 9; }
 
     .sm\:column-span-8 {
       grid-column-end: span 8; }
 
-    .sm\:from-row-8 {
+    .sm\:row-start-8 {
       grid-row-start: 8; }
 
-    .sm\:to-row-8 {
+    .sm\:row-end-8 {
       grid-row-end: 9; }
 
     .sm\:row-span-8 {
@@ -1784,19 +1784,19 @@ table {
     .sm\:row-gap-45 {
       grid-row-gap: 45px; }
 
-    .sm\:from-column-9 {
+    .sm\:column-start-9 {
       grid-column-start: 9; }
 
-    .sm\:to-column-9 {
+    .sm\:column-end-9 {
       grid-column-end: 10; }
 
     .sm\:column-span-9 {
       grid-column-end: span 9; }
 
-    .sm\:from-row-9 {
+    .sm\:row-start-9 {
       grid-row-start: 9; }
 
-    .sm\:to-row-9 {
+    .sm\:row-end-9 {
       grid-row-end: 10; }
 
     .sm\:row-span-9 {
@@ -1814,19 +1814,19 @@ table {
     .sm\:row-gap-50 {
       grid-row-gap: 50px; }
 
-    .sm\:from-column-10 {
+    .sm\:column-start-10 {
       grid-column-start: 10; }
 
-    .sm\:to-column-10 {
+    .sm\:column-end-10 {
       grid-column-end: 11; }
 
     .sm\:column-span-10 {
       grid-column-end: span 10; }
 
-    .sm\:from-row-10 {
+    .sm\:row-start-10 {
       grid-row-start: 10; }
 
-    .sm\:to-row-10 {
+    .sm\:row-end-10 {
       grid-row-end: 11; }
 
     .sm\:row-span-10 {
@@ -1844,19 +1844,19 @@ table {
     .sm\:row-gap-55 {
       grid-row-gap: 55px; }
 
-    .sm\:from-column-11 {
+    .sm\:column-start-11 {
       grid-column-start: 11; }
 
-    .sm\:to-column-11 {
+    .sm\:column-end-11 {
       grid-column-end: 12; }
 
     .sm\:column-span-11 {
       grid-column-end: span 11; }
 
-    .sm\:from-row-11 {
+    .sm\:row-start-11 {
       grid-row-start: 11; }
 
-    .sm\:to-row-11 {
+    .sm\:row-end-11 {
       grid-row-end: 12; }
 
     .sm\:row-span-11 {
@@ -1874,19 +1874,19 @@ table {
     .sm\:row-gap-60 {
       grid-row-gap: 60px; }
 
-    .sm\:from-column-12 {
+    .sm\:column-start-12 {
       grid-column-start: 12; }
 
-    .sm\:to-column-12 {
+    .sm\:column-end-12 {
       grid-column-end: 13; }
 
     .sm\:column-span-12 {
       grid-column-end: span 12; }
 
-    .sm\:from-row-12 {
+    .sm\:row-start-12 {
       grid-row-start: 12; }
 
-    .sm\:to-row-12 {
+    .sm\:row-end-12 {
       grid-row-end: 13; }
 
     .sm\:row-span-12 {
@@ -2000,19 +2000,19 @@ table {
     .md\:row-gap-5 {
       grid-row-gap: 5px; }
 
-    .md\:from-column-1 {
+    .md\:column-start-1 {
       grid-column-start: 1; }
 
-    .md\:to-column-1 {
+    .md\:column-end-1 {
       grid-column-end: 2; }
 
     .md\:column-span-1 {
       grid-column-end: span 1; }
 
-    .md\:from-row-1 {
+    .md\:row-start-1 {
       grid-row-start: 1; }
 
-    .md\:to-row-1 {
+    .md\:row-end-1 {
       grid-row-end: 2; }
 
     .md\:row-span-1 {
@@ -2030,19 +2030,19 @@ table {
     .md\:row-gap-10 {
       grid-row-gap: 10px; }
 
-    .md\:from-column-2 {
+    .md\:column-start-2 {
       grid-column-start: 2; }
 
-    .md\:to-column-2 {
+    .md\:column-end-2 {
       grid-column-end: 3; }
 
     .md\:column-span-2 {
       grid-column-end: span 2; }
 
-    .md\:from-row-2 {
+    .md\:row-start-2 {
       grid-row-start: 2; }
 
-    .md\:to-row-2 {
+    .md\:row-end-2 {
       grid-row-end: 3; }
 
     .md\:row-span-2 {
@@ -2060,19 +2060,19 @@ table {
     .md\:row-gap-15 {
       grid-row-gap: 15px; }
 
-    .md\:from-column-3 {
+    .md\:column-start-3 {
       grid-column-start: 3; }
 
-    .md\:to-column-3 {
+    .md\:column-end-3 {
       grid-column-end: 4; }
 
     .md\:column-span-3 {
       grid-column-end: span 3; }
 
-    .md\:from-row-3 {
+    .md\:row-start-3 {
       grid-row-start: 3; }
 
-    .md\:to-row-3 {
+    .md\:row-end-3 {
       grid-row-end: 4; }
 
     .md\:row-span-3 {
@@ -2090,19 +2090,19 @@ table {
     .md\:row-gap-20 {
       grid-row-gap: 20px; }
 
-    .md\:from-column-4 {
+    .md\:column-start-4 {
       grid-column-start: 4; }
 
-    .md\:to-column-4 {
+    .md\:column-end-4 {
       grid-column-end: 5; }
 
     .md\:column-span-4 {
       grid-column-end: span 4; }
 
-    .md\:from-row-4 {
+    .md\:row-start-4 {
       grid-row-start: 4; }
 
-    .md\:to-row-4 {
+    .md\:row-end-4 {
       grid-row-end: 5; }
 
     .md\:row-span-4 {
@@ -2120,19 +2120,19 @@ table {
     .md\:row-gap-25 {
       grid-row-gap: 25px; }
 
-    .md\:from-column-5 {
+    .md\:column-start-5 {
       grid-column-start: 5; }
 
-    .md\:to-column-5 {
+    .md\:column-end-5 {
       grid-column-end: 6; }
 
     .md\:column-span-5 {
       grid-column-end: span 5; }
 
-    .md\:from-row-5 {
+    .md\:row-start-5 {
       grid-row-start: 5; }
 
-    .md\:to-row-5 {
+    .md\:row-end-5 {
       grid-row-end: 6; }
 
     .md\:row-span-5 {
@@ -2150,19 +2150,19 @@ table {
     .md\:row-gap-30 {
       grid-row-gap: 30px; }
 
-    .md\:from-column-6 {
+    .md\:column-start-6 {
       grid-column-start: 6; }
 
-    .md\:to-column-6 {
+    .md\:column-end-6 {
       grid-column-end: 7; }
 
     .md\:column-span-6 {
       grid-column-end: span 6; }
 
-    .md\:from-row-6 {
+    .md\:row-start-6 {
       grid-row-start: 6; }
 
-    .md\:to-row-6 {
+    .md\:row-end-6 {
       grid-row-end: 7; }
 
     .md\:row-span-6 {
@@ -2180,19 +2180,19 @@ table {
     .md\:row-gap-35 {
       grid-row-gap: 35px; }
 
-    .md\:from-column-7 {
+    .md\:column-start-7 {
       grid-column-start: 7; }
 
-    .md\:to-column-7 {
+    .md\:column-end-7 {
       grid-column-end: 8; }
 
     .md\:column-span-7 {
       grid-column-end: span 7; }
 
-    .md\:from-row-7 {
+    .md\:row-start-7 {
       grid-row-start: 7; }
 
-    .md\:to-row-7 {
+    .md\:row-end-7 {
       grid-row-end: 8; }
 
     .md\:row-span-7 {
@@ -2210,19 +2210,19 @@ table {
     .md\:row-gap-40 {
       grid-row-gap: 40px; }
 
-    .md\:from-column-8 {
+    .md\:column-start-8 {
       grid-column-start: 8; }
 
-    .md\:to-column-8 {
+    .md\:column-end-8 {
       grid-column-end: 9; }
 
     .md\:column-span-8 {
       grid-column-end: span 8; }
 
-    .md\:from-row-8 {
+    .md\:row-start-8 {
       grid-row-start: 8; }
 
-    .md\:to-row-8 {
+    .md\:row-end-8 {
       grid-row-end: 9; }
 
     .md\:row-span-8 {
@@ -2240,19 +2240,19 @@ table {
     .md\:row-gap-45 {
       grid-row-gap: 45px; }
 
-    .md\:from-column-9 {
+    .md\:column-start-9 {
       grid-column-start: 9; }
 
-    .md\:to-column-9 {
+    .md\:column-end-9 {
       grid-column-end: 10; }
 
     .md\:column-span-9 {
       grid-column-end: span 9; }
 
-    .md\:from-row-9 {
+    .md\:row-start-9 {
       grid-row-start: 9; }
 
-    .md\:to-row-9 {
+    .md\:row-end-9 {
       grid-row-end: 10; }
 
     .md\:row-span-9 {
@@ -2270,19 +2270,19 @@ table {
     .md\:row-gap-50 {
       grid-row-gap: 50px; }
 
-    .md\:from-column-10 {
+    .md\:column-start-10 {
       grid-column-start: 10; }
 
-    .md\:to-column-10 {
+    .md\:column-end-10 {
       grid-column-end: 11; }
 
     .md\:column-span-10 {
       grid-column-end: span 10; }
 
-    .md\:from-row-10 {
+    .md\:row-start-10 {
       grid-row-start: 10; }
 
-    .md\:to-row-10 {
+    .md\:row-end-10 {
       grid-row-end: 11; }
 
     .md\:row-span-10 {
@@ -2300,19 +2300,19 @@ table {
     .md\:row-gap-55 {
       grid-row-gap: 55px; }
 
-    .md\:from-column-11 {
+    .md\:column-start-11 {
       grid-column-start: 11; }
 
-    .md\:to-column-11 {
+    .md\:column-end-11 {
       grid-column-end: 12; }
 
     .md\:column-span-11 {
       grid-column-end: span 11; }
 
-    .md\:from-row-11 {
+    .md\:row-start-11 {
       grid-row-start: 11; }
 
-    .md\:to-row-11 {
+    .md\:row-end-11 {
       grid-row-end: 12; }
 
     .md\:row-span-11 {
@@ -2330,19 +2330,19 @@ table {
     .md\:row-gap-60 {
       grid-row-gap: 60px; }
 
-    .md\:from-column-12 {
+    .md\:column-start-12 {
       grid-column-start: 12; }
 
-    .md\:to-column-12 {
+    .md\:column-end-12 {
       grid-column-end: 13; }
 
     .md\:column-span-12 {
       grid-column-end: span 12; }
 
-    .md\:from-row-12 {
+    .md\:row-start-12 {
       grid-row-start: 12; }
 
-    .md\:to-row-12 {
+    .md\:row-end-12 {
       grid-row-end: 13; }
 
     .md\:row-span-12 {
@@ -2456,19 +2456,19 @@ table {
     .lg\:row-gap-5 {
       grid-row-gap: 5px; }
 
-    .lg\:from-column-1 {
+    .lg\:column-start-1 {
       grid-column-start: 1; }
 
-    .lg\:to-column-1 {
+    .lg\:column-end-1 {
       grid-column-end: 2; }
 
     .lg\:column-span-1 {
       grid-column-end: span 1; }
 
-    .lg\:from-row-1 {
+    .lg\:row-start-1 {
       grid-row-start: 1; }
 
-    .lg\:to-row-1 {
+    .lg\:row-end-1 {
       grid-row-end: 2; }
 
     .lg\:row-span-1 {
@@ -2486,19 +2486,19 @@ table {
     .lg\:row-gap-10 {
       grid-row-gap: 10px; }
 
-    .lg\:from-column-2 {
+    .lg\:column-start-2 {
       grid-column-start: 2; }
 
-    .lg\:to-column-2 {
+    .lg\:column-end-2 {
       grid-column-end: 3; }
 
     .lg\:column-span-2 {
       grid-column-end: span 2; }
 
-    .lg\:from-row-2 {
+    .lg\:row-start-2 {
       grid-row-start: 2; }
 
-    .lg\:to-row-2 {
+    .lg\:row-end-2 {
       grid-row-end: 3; }
 
     .lg\:row-span-2 {
@@ -2516,19 +2516,19 @@ table {
     .lg\:row-gap-15 {
       grid-row-gap: 15px; }
 
-    .lg\:from-column-3 {
+    .lg\:column-start-3 {
       grid-column-start: 3; }
 
-    .lg\:to-column-3 {
+    .lg\:column-end-3 {
       grid-column-end: 4; }
 
     .lg\:column-span-3 {
       grid-column-end: span 3; }
 
-    .lg\:from-row-3 {
+    .lg\:row-start-3 {
       grid-row-start: 3; }
 
-    .lg\:to-row-3 {
+    .lg\:row-end-3 {
       grid-row-end: 4; }
 
     .lg\:row-span-3 {
@@ -2546,19 +2546,19 @@ table {
     .lg\:row-gap-20 {
       grid-row-gap: 20px; }
 
-    .lg\:from-column-4 {
+    .lg\:column-start-4 {
       grid-column-start: 4; }
 
-    .lg\:to-column-4 {
+    .lg\:column-end-4 {
       grid-column-end: 5; }
 
     .lg\:column-span-4 {
       grid-column-end: span 4; }
 
-    .lg\:from-row-4 {
+    .lg\:row-start-4 {
       grid-row-start: 4; }
 
-    .lg\:to-row-4 {
+    .lg\:row-end-4 {
       grid-row-end: 5; }
 
     .lg\:row-span-4 {
@@ -2576,19 +2576,19 @@ table {
     .lg\:row-gap-25 {
       grid-row-gap: 25px; }
 
-    .lg\:from-column-5 {
+    .lg\:column-start-5 {
       grid-column-start: 5; }
 
-    .lg\:to-column-5 {
+    .lg\:column-end-5 {
       grid-column-end: 6; }
 
     .lg\:column-span-5 {
       grid-column-end: span 5; }
 
-    .lg\:from-row-5 {
+    .lg\:row-start-5 {
       grid-row-start: 5; }
 
-    .lg\:to-row-5 {
+    .lg\:row-end-5 {
       grid-row-end: 6; }
 
     .lg\:row-span-5 {
@@ -2606,19 +2606,19 @@ table {
     .lg\:row-gap-30 {
       grid-row-gap: 30px; }
 
-    .lg\:from-column-6 {
+    .lg\:column-start-6 {
       grid-column-start: 6; }
 
-    .lg\:to-column-6 {
+    .lg\:column-end-6 {
       grid-column-end: 7; }
 
     .lg\:column-span-6 {
       grid-column-end: span 6; }
 
-    .lg\:from-row-6 {
+    .lg\:row-start-6 {
       grid-row-start: 6; }
 
-    .lg\:to-row-6 {
+    .lg\:row-end-6 {
       grid-row-end: 7; }
 
     .lg\:row-span-6 {
@@ -2636,19 +2636,19 @@ table {
     .lg\:row-gap-35 {
       grid-row-gap: 35px; }
 
-    .lg\:from-column-7 {
+    .lg\:column-start-7 {
       grid-column-start: 7; }
 
-    .lg\:to-column-7 {
+    .lg\:column-end-7 {
       grid-column-end: 8; }
 
     .lg\:column-span-7 {
       grid-column-end: span 7; }
 
-    .lg\:from-row-7 {
+    .lg\:row-start-7 {
       grid-row-start: 7; }
 
-    .lg\:to-row-7 {
+    .lg\:row-end-7 {
       grid-row-end: 8; }
 
     .lg\:row-span-7 {
@@ -2666,19 +2666,19 @@ table {
     .lg\:row-gap-40 {
       grid-row-gap: 40px; }
 
-    .lg\:from-column-8 {
+    .lg\:column-start-8 {
       grid-column-start: 8; }
 
-    .lg\:to-column-8 {
+    .lg\:column-end-8 {
       grid-column-end: 9; }
 
     .lg\:column-span-8 {
       grid-column-end: span 8; }
 
-    .lg\:from-row-8 {
+    .lg\:row-start-8 {
       grid-row-start: 8; }
 
-    .lg\:to-row-8 {
+    .lg\:row-end-8 {
       grid-row-end: 9; }
 
     .lg\:row-span-8 {
@@ -2696,19 +2696,19 @@ table {
     .lg\:row-gap-45 {
       grid-row-gap: 45px; }
 
-    .lg\:from-column-9 {
+    .lg\:column-start-9 {
       grid-column-start: 9; }
 
-    .lg\:to-column-9 {
+    .lg\:column-end-9 {
       grid-column-end: 10; }
 
     .lg\:column-span-9 {
       grid-column-end: span 9; }
 
-    .lg\:from-row-9 {
+    .lg\:row-start-9 {
       grid-row-start: 9; }
 
-    .lg\:to-row-9 {
+    .lg\:row-end-9 {
       grid-row-end: 10; }
 
     .lg\:row-span-9 {
@@ -2726,19 +2726,19 @@ table {
     .lg\:row-gap-50 {
       grid-row-gap: 50px; }
 
-    .lg\:from-column-10 {
+    .lg\:column-start-10 {
       grid-column-start: 10; }
 
-    .lg\:to-column-10 {
+    .lg\:column-end-10 {
       grid-column-end: 11; }
 
     .lg\:column-span-10 {
       grid-column-end: span 10; }
 
-    .lg\:from-row-10 {
+    .lg\:row-start-10 {
       grid-row-start: 10; }
 
-    .lg\:to-row-10 {
+    .lg\:row-end-10 {
       grid-row-end: 11; }
 
     .lg\:row-span-10 {
@@ -2756,19 +2756,19 @@ table {
     .lg\:row-gap-55 {
       grid-row-gap: 55px; }
 
-    .lg\:from-column-11 {
+    .lg\:column-start-11 {
       grid-column-start: 11; }
 
-    .lg\:to-column-11 {
+    .lg\:column-end-11 {
       grid-column-end: 12; }
 
     .lg\:column-span-11 {
       grid-column-end: span 11; }
 
-    .lg\:from-row-11 {
+    .lg\:row-start-11 {
       grid-row-start: 11; }
 
-    .lg\:to-row-11 {
+    .lg\:row-end-11 {
       grid-row-end: 12; }
 
     .lg\:row-span-11 {
@@ -2786,19 +2786,19 @@ table {
     .lg\:row-gap-60 {
       grid-row-gap: 60px; }
 
-    .lg\:from-column-12 {
+    .lg\:column-start-12 {
       grid-column-start: 12; }
 
-    .lg\:to-column-12 {
+    .lg\:column-end-12 {
       grid-column-end: 13; }
 
     .lg\:column-span-12 {
       grid-column-end: span 12; }
 
-    .lg\:from-row-12 {
+    .lg\:row-start-12 {
       grid-row-start: 12; }
 
-    .lg\:to-row-12 {
+    .lg\:row-end-12 {
       grid-row-end: 13; }
 
     .lg\:row-span-12 {
@@ -2912,19 +2912,19 @@ table {
     .xl\:row-gap-5 {
       grid-row-gap: 5px; }
 
-    .xl\:from-column-1 {
+    .xl\:column-start-1 {
       grid-column-start: 1; }
 
-    .xl\:to-column-1 {
+    .xl\:column-end-1 {
       grid-column-end: 2; }
 
     .xl\:column-span-1 {
       grid-column-end: span 1; }
 
-    .xl\:from-row-1 {
+    .xl\:row-start-1 {
       grid-row-start: 1; }
 
-    .xl\:to-row-1 {
+    .xl\:row-end-1 {
       grid-row-end: 2; }
 
     .xl\:row-span-1 {
@@ -2942,19 +2942,19 @@ table {
     .xl\:row-gap-10 {
       grid-row-gap: 10px; }
 
-    .xl\:from-column-2 {
+    .xl\:column-start-2 {
       grid-column-start: 2; }
 
-    .xl\:to-column-2 {
+    .xl\:column-end-2 {
       grid-column-end: 3; }
 
     .xl\:column-span-2 {
       grid-column-end: span 2; }
 
-    .xl\:from-row-2 {
+    .xl\:row-start-2 {
       grid-row-start: 2; }
 
-    .xl\:to-row-2 {
+    .xl\:row-end-2 {
       grid-row-end: 3; }
 
     .xl\:row-span-2 {
@@ -2972,19 +2972,19 @@ table {
     .xl\:row-gap-15 {
       grid-row-gap: 15px; }
 
-    .xl\:from-column-3 {
+    .xl\:column-start-3 {
       grid-column-start: 3; }
 
-    .xl\:to-column-3 {
+    .xl\:column-end-3 {
       grid-column-end: 4; }
 
     .xl\:column-span-3 {
       grid-column-end: span 3; }
 
-    .xl\:from-row-3 {
+    .xl\:row-start-3 {
       grid-row-start: 3; }
 
-    .xl\:to-row-3 {
+    .xl\:row-end-3 {
       grid-row-end: 4; }
 
     .xl\:row-span-3 {
@@ -3002,19 +3002,19 @@ table {
     .xl\:row-gap-20 {
       grid-row-gap: 20px; }
 
-    .xl\:from-column-4 {
+    .xl\:column-start-4 {
       grid-column-start: 4; }
 
-    .xl\:to-column-4 {
+    .xl\:column-end-4 {
       grid-column-end: 5; }
 
     .xl\:column-span-4 {
       grid-column-end: span 4; }
 
-    .xl\:from-row-4 {
+    .xl\:row-start-4 {
       grid-row-start: 4; }
 
-    .xl\:to-row-4 {
+    .xl\:row-end-4 {
       grid-row-end: 5; }
 
     .xl\:row-span-4 {
@@ -3032,19 +3032,19 @@ table {
     .xl\:row-gap-25 {
       grid-row-gap: 25px; }
 
-    .xl\:from-column-5 {
+    .xl\:column-start-5 {
       grid-column-start: 5; }
 
-    .xl\:to-column-5 {
+    .xl\:column-end-5 {
       grid-column-end: 6; }
 
     .xl\:column-span-5 {
       grid-column-end: span 5; }
 
-    .xl\:from-row-5 {
+    .xl\:row-start-5 {
       grid-row-start: 5; }
 
-    .xl\:to-row-5 {
+    .xl\:row-end-5 {
       grid-row-end: 6; }
 
     .xl\:row-span-5 {
@@ -3062,19 +3062,19 @@ table {
     .xl\:row-gap-30 {
       grid-row-gap: 30px; }
 
-    .xl\:from-column-6 {
+    .xl\:column-start-6 {
       grid-column-start: 6; }
 
-    .xl\:to-column-6 {
+    .xl\:column-end-6 {
       grid-column-end: 7; }
 
     .xl\:column-span-6 {
       grid-column-end: span 6; }
 
-    .xl\:from-row-6 {
+    .xl\:row-start-6 {
       grid-row-start: 6; }
 
-    .xl\:to-row-6 {
+    .xl\:row-end-6 {
       grid-row-end: 7; }
 
     .xl\:row-span-6 {
@@ -3092,19 +3092,19 @@ table {
     .xl\:row-gap-35 {
       grid-row-gap: 35px; }
 
-    .xl\:from-column-7 {
+    .xl\:column-start-7 {
       grid-column-start: 7; }
 
-    .xl\:to-column-7 {
+    .xl\:column-end-7 {
       grid-column-end: 8; }
 
     .xl\:column-span-7 {
       grid-column-end: span 7; }
 
-    .xl\:from-row-7 {
+    .xl\:row-start-7 {
       grid-row-start: 7; }
 
-    .xl\:to-row-7 {
+    .xl\:row-end-7 {
       grid-row-end: 8; }
 
     .xl\:row-span-7 {
@@ -3122,19 +3122,19 @@ table {
     .xl\:row-gap-40 {
       grid-row-gap: 40px; }
 
-    .xl\:from-column-8 {
+    .xl\:column-start-8 {
       grid-column-start: 8; }
 
-    .xl\:to-column-8 {
+    .xl\:column-end-8 {
       grid-column-end: 9; }
 
     .xl\:column-span-8 {
       grid-column-end: span 8; }
 
-    .xl\:from-row-8 {
+    .xl\:row-start-8 {
       grid-row-start: 8; }
 
-    .xl\:to-row-8 {
+    .xl\:row-end-8 {
       grid-row-end: 9; }
 
     .xl\:row-span-8 {
@@ -3152,19 +3152,19 @@ table {
     .xl\:row-gap-45 {
       grid-row-gap: 45px; }
 
-    .xl\:from-column-9 {
+    .xl\:column-start-9 {
       grid-column-start: 9; }
 
-    .xl\:to-column-9 {
+    .xl\:column-end-9 {
       grid-column-end: 10; }
 
     .xl\:column-span-9 {
       grid-column-end: span 9; }
 
-    .xl\:from-row-9 {
+    .xl\:row-start-9 {
       grid-row-start: 9; }
 
-    .xl\:to-row-9 {
+    .xl\:row-end-9 {
       grid-row-end: 10; }
 
     .xl\:row-span-9 {
@@ -3182,19 +3182,19 @@ table {
     .xl\:row-gap-50 {
       grid-row-gap: 50px; }
 
-    .xl\:from-column-10 {
+    .xl\:column-start-10 {
       grid-column-start: 10; }
 
-    .xl\:to-column-10 {
+    .xl\:column-end-10 {
       grid-column-end: 11; }
 
     .xl\:column-span-10 {
       grid-column-end: span 10; }
 
-    .xl\:from-row-10 {
+    .xl\:row-start-10 {
       grid-row-start: 10; }
 
-    .xl\:to-row-10 {
+    .xl\:row-end-10 {
       grid-row-end: 11; }
 
     .xl\:row-span-10 {
@@ -3212,19 +3212,19 @@ table {
     .xl\:row-gap-55 {
       grid-row-gap: 55px; }
 
-    .xl\:from-column-11 {
+    .xl\:column-start-11 {
       grid-column-start: 11; }
 
-    .xl\:to-column-11 {
+    .xl\:column-end-11 {
       grid-column-end: 12; }
 
     .xl\:column-span-11 {
       grid-column-end: span 11; }
 
-    .xl\:from-row-11 {
+    .xl\:row-start-11 {
       grid-row-start: 11; }
 
-    .xl\:to-row-11 {
+    .xl\:row-end-11 {
       grid-row-end: 12; }
 
     .xl\:row-span-11 {
@@ -3242,19 +3242,19 @@ table {
     .xl\:row-gap-60 {
       grid-row-gap: 60px; }
 
-    .xl\:from-column-12 {
+    .xl\:column-start-12 {
       grid-column-start: 12; }
 
-    .xl\:to-column-12 {
+    .xl\:column-end-12 {
       grid-column-end: 13; }
 
     .xl\:column-span-12 {
       grid-column-end: span 12; }
 
-    .xl\:from-row-12 {
+    .xl\:row-start-12 {
       grid-row-start: 12; }
 
-    .xl\:to-row-12 {
+    .xl\:row-end-12 {
       grid-row-end: 13; }
 
     .xl\:row-span-12 {
@@ -3356,4 +3356,4 @@ table {
     .xl\:auto-flow-column {
       grid-auto-flow: column; } } }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=raisin.css.map */

@@ -2,6 +2,16 @@
 
 An Utility CSS only library
 
+### TODO:
+
+- Flex
+- Margin and padding
+- Border
+- Opacity
+- Width and height
+- text (transforms and decorations)
+- Background (positioning, sizing, etc)
+
 ## DOCS
 
 ### Breakpoints

@@ -259,7 +259,7 @@ We can use grid on each breakpoint adding the prefix:
  `lg:grid`
  `xl:grid`
 
-By default we are adding `grid-template-columns:auto` and `grid-template-rows:auto` to an `.is-grid` element. For setting the columns and rows to the grid we can add:
+By default we are adding `grid-template-columns:auto` and `grid-template-rows:auto` to a `.grid` element. For setting the columns and rows to the grid we can add:
 
 - `.has-{1 to 12}-columns` or
 - `.has-{1 to 12}-rows` 
@@ -286,7 +286,7 @@ We alse con add the proper breakpoints:
 - `.md:has-{1 to 12}-columns` or
 - `.md:has-{1 to 12}-rows` and so.
 
-We can also use this classes on an `.is-grid` element:
+We can also use this classes on a `.grid` element:
 
 - `.justify-items-{start | end | center | stretch}`
 - `.align-items-{start | end | center | stretch}`

@@ -1,0 +1,114 @@
+.flex {
+  display:flex;
+
+  @each $direction in (row, column) {
+    &-#{$direction} {
+      flex-direction: $direction;
+
+      &-reverse {
+        flex-direction: $direction + -reverse;
+      }
+    }
+  }
+
+  @each $value in (wrap, wrap-reverse, nowrap) {
+    &-#{$value} {
+      flex-wrap: $value;
+    }
+  }
+}
+
+$justifys-and-values: (
+  (start, flex-start) 
+  (end, flex-end)
+  (center, center)
+  (between, space-between)
+  (around, space-around)
+  (evenly, space-evenly)
+);
+
+@each $justify, $value in $justifys-and-values {
+  .justify-#{$justify} {
+    justify-content: $value;
+  }
+} 
+
+$items-and-values: (
+  (start, flex-start)
+  (end, flex-end)
+  (center, center)
+  (baseline, baseline)
+  (stretch, stretch)
+);
+
+@each $item, $value in $items-and-values {
+  .items-#{$item} {
+    align-items: $value;
+  }
+
+  .self-#{$item} {
+    align-self: $value;
+  }
+}
+
+$contents-and-values: (
+  (start, flex-start) 
+  (end, flex-end)
+  (center, center)
+  (stretch, stretch)
+  (between, space-between)
+  (around, space-around)
+);
+
+@each $content, $value in $contents-and-values {
+  .content-#{$content} {
+    align-content: $value;
+  }
+} 
+
+@each $bname, $breakpoint in $breakpoints {
+  @media(min-width: $breakpoint) {
+
+    .#{$bname}\:flex {
+      display:flex;
+
+      @each $direction in (row, column) {
+        &-#{$direction} {
+          flex-direction: $direction;
+
+          &-reverse {
+            flex-direction: $direction + -reverse;
+          }
+        }
+      }
+
+      @each $value in (wrap, wrap-reverse, nowrap) {
+        &-#{$value} {
+          flex-wrap: $value;
+        }
+      }
+    }
+
+    @each $justify, $value in $justifys-and-values {
+      .#{$bname}\:justify-#{$justify} {
+        justify-content: $value;
+      }
+    } 
+
+    @each $item, $value in $items-and-values {
+      .#{$bname}\:items-#{$item} {
+        align-items: $value;
+      }
+
+      .#{$bname}\:self-#{$item} {
+        align-self: $value;
+      }
+    }
+
+    @each $content, $value in $contents-and-values {
+      .#{$bname}\:content-#{$content} {
+        align-content: $value;
+      }
+    } 
+  }
+}

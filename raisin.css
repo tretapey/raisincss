@@ -3225,6 +3225,161 @@ table {
     height: 100vh; }
   .xl\:h-auto {
     height: auto; } }
+.bg-fixed {
+  background-attachment: fixed; }
+.bg-local {
+  background-attachment: local; }
+.bg-scroll {
+  background-attachment: scroll; }
+.bg-auto {
+  background-size: auto; }
+.bg-cover {
+  background-size: cover; }
+.bg-contain {
+  background-size: contain; }
+.bg-center {
+  background-position: center; }
+.bg-top {
+  background-position: top; }
+.bg-right {
+  background-position: right; }
+.bg-bottom {
+  background-position: bottom; }
+.bg-left {
+  background-position: left; }
+.bg-right-top {
+  background-position: right top; }
+.bg-right-bottom {
+  background-position: right bottom; }
+.bg-left-top {
+  background-position: left top; }
+.bg-left-bottom {
+  background-position: left bottom; }
+
+@media (min-width: 576px) {
+  .sm\:bg-fixed {
+    background-attachment: fixed; }
+  .sm\:bg-local {
+    background-attachment: local; }
+  .sm\:bg-scroll {
+    background-attachment: scroll; }
+  .sm\:bg-auto {
+    background-size: auto; }
+  .sm\:bg-cover {
+    background-size: cover; }
+  .sm\:bg-contain {
+    background-size: contain; }
+  .sm\:bg-center {
+    background-position: center; }
+  .sm\:bg-top {
+    background-position: top; }
+  .sm\:bg-right {
+    background-position: right; }
+  .sm\:bg-bottom {
+    background-position: bottom; }
+  .sm\:bg-left {
+    background-position: left; }
+  .sm\:bg-right-top {
+    background-position: right top; }
+  .sm\:bg-right-bottom {
+    background-position: right bottom; }
+  .sm\:bg-left-top {
+    background-position: left top; }
+  .sm\:bg-left-bottom {
+    background-position: left bottom; } }
+@media (min-width: 768px) {
+  .md\:bg-fixed {
+    background-attachment: fixed; }
+  .md\:bg-local {
+    background-attachment: local; }
+  .md\:bg-scroll {
+    background-attachment: scroll; }
+  .md\:bg-auto {
+    background-size: auto; }
+  .md\:bg-cover {
+    background-size: cover; }
+  .md\:bg-contain {
+    background-size: contain; }
+  .md\:bg-center {
+    background-position: center; }
+  .md\:bg-top {
+    background-position: top; }
+  .md\:bg-right {
+    background-position: right; }
+  .md\:bg-bottom {
+    background-position: bottom; }
+  .md\:bg-left {
+    background-position: left; }
+  .md\:bg-right-top {
+    background-position: right top; }
+  .md\:bg-right-bottom {
+    background-position: right bottom; }
+  .md\:bg-left-top {
+    background-position: left top; }
+  .md\:bg-left-bottom {
+    background-position: left bottom; } }
+@media (min-width: 992px) {
+  .lg\:bg-fixed {
+    background-attachment: fixed; }
+  .lg\:bg-local {
+    background-attachment: local; }
+  .lg\:bg-scroll {
+    background-attachment: scroll; }
+  .lg\:bg-auto {
+    background-size: auto; }
+  .lg\:bg-cover {
+    background-size: cover; }
+  .lg\:bg-contain {
+    background-size: contain; }
+  .lg\:bg-center {
+    background-position: center; }
+  .lg\:bg-top {
+    background-position: top; }
+  .lg\:bg-right {
+    background-position: right; }
+  .lg\:bg-bottom {
+    background-position: bottom; }
+  .lg\:bg-left {
+    background-position: left; }
+  .lg\:bg-right-top {
+    background-position: right top; }
+  .lg\:bg-right-bottom {
+    background-position: right bottom; }
+  .lg\:bg-left-top {
+    background-position: left top; }
+  .lg\:bg-left-bottom {
+    background-position: left bottom; } }
+@media (min-width: 1200px) {
+  .xl\:bg-fixed {
+    background-attachment: fixed; }
+  .xl\:bg-local {
+    background-attachment: local; }
+  .xl\:bg-scroll {
+    background-attachment: scroll; }
+  .xl\:bg-auto {
+    background-size: auto; }
+  .xl\:bg-cover {
+    background-size: cover; }
+  .xl\:bg-contain {
+    background-size: contain; }
+  .xl\:bg-center {
+    background-position: center; }
+  .xl\:bg-top {
+    background-position: top; }
+  .xl\:bg-right {
+    background-position: right; }
+  .xl\:bg-bottom {
+    background-position: bottom; }
+  .xl\:bg-left {
+    background-position: left; }
+  .xl\:bg-right-top {
+    background-position: right top; }
+  .xl\:bg-right-bottom {
+    background-position: right bottom; }
+  .xl\:bg-left-top {
+    background-position: left top; }
+  .xl\:bg-left-bottom {
+    background-position: left bottom; } }
 .font-sans {
   font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
 .font-serif {

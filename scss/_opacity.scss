@@ -1,0 +1,19 @@
+.opacity {
+  @each $n in (0, 25, 50, 75, 100) {
+    &-#{$n} {
+      opacity: $n/100;
+    }
+  }
+}
+
+@each $bname, $breakpoint in $breakpoints {
+  @media(min-width: $breakpoint) {
+    .#{$bname}\:opacity {
+      @each $n in (0, 25, 50, 75, 100) {
+        &-#{$n} {
+          opacity: $n/100;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+$widths-and-values: (
+  (1\/2, 50%)
+  (1\/3, 33.33333%)
+  (2\/3, 66.66667%)
+  (1\/4, 25%)
+  (2\/4, 75%)
+  (1\/5, 20%)
+  (2\/5, 40%)
+  (3\/5, 60%)
+  (4\/5, 80%)
+  (1\/6, 16.66667%)
+  (full, 100%)
+  (screen, 100vw)
+  (auto, auto)
+);
+
+.w {
+  @each $width, $value in $widths-and-values {
+    &-#{$width} {
+      width: $value;
+    }
+  }
+}
+
+@each $bname, $breakpoint in $breakpoints {
+  @media(min-width: $breakpoint) {
+    .#{$bname}\:w {
+      @each $width, $value in $widths-and-values {
+        &-#{$width} {
+          width: $value;
+        }
+      }
+    }
+  }
+}

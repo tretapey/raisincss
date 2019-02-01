@@ -6,7 +6,6 @@ An Utility CSS only library
 
 - Border
 - Opacity
-- Width and height
 - text (transforms and decorations)
 - Background (positioning, sizing, etc)
 
@@ -195,6 +194,52 @@ And we can use any breakpoint prefix, i.e:
 - `.lg:px-2`
 - `.xl:pr-0`
 
+#### Width
+
+- `.w-1/2` -> `width: 50%`
+- `.w-1/3` -> `width: 33.33333%`
+- `.w-2/3` -> `width: 66.66667%`
+- `.w-1/4` -> `width: 25%`
+- `.w-2/4` -> `width: 75%`
+- `.w-1/5` -> `width: 20%`
+- `.w-2/5` -> `width: 40%`
+- `.w-3/5` -> `width: 60%`
+- `.w-4/5` -> `width: 80%`
+- `.w-1/6` -> `width: 16.66667%`
+- `.w-full` -> `width: 100%`
+- `.w-screen` -> `width: 100vw`
+- `.w-auto` -> `width: auto`
+
+or
+
+- `.sm:w-1/2`
+- `.md:w-2/4`
+- `.lg:w-full`
+- `.xl:w-auto`
+
+#### Height
+
+- `.h-1/2` -> `height: 50%`
+- `.h-1/3` -> `height: 33.33333%`
+- `.h-2/3` -> `height: 66.66667%`
+- `.h-1/4` -> `height: 25%`
+- `.h-2/4` -> `height: 75%`
+- `.h-1/5` -> `height: 20%`
+- `.h-2/5` -> `height: 40%`
+- `.h-3/5` -> `height: 60%`
+- `.h-4/5` -> `height: 80%`
+- `.h-1/6` -> `height: 16.66667%`
+- `.h-full` -> `height: 100%`
+- `.h-screen` -> `height: 100vh`
+- `.h-auto` -> `height: auto`
+
+or
+
+- `.sm:h-1/2`
+- `.md:h-2/4`
+- `.lg:h-full`
+- `.xl:h-auto`
+
 #### Font
 
 Setting font-family:
@@ -277,7 +322,6 @@ Will have this css properties:
   grid-template-rows: repeat(4, 1fr);
 }
 ```
-
 
 We alse con add the proper breakpoints:
 

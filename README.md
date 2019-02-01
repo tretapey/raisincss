@@ -6,6 +6,7 @@ An Utility CSS only library
 
 - Border
 - Opacity
+- Box shadow
 - text (transforms and decorations)
 
 ## DOCS

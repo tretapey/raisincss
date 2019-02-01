@@ -7,7 +7,6 @@ An Utility CSS only library
 - Border
 - Opacity
 - text (transforms and decorations)
-- Background (positioning, sizing, etc)
 
 ## DOCS
 

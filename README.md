@@ -1,6 +1,24 @@
-# raisinCSS
+# RaisinCSS
 
 An Utility CSS only library
+
+## How to use
+
+Add this to the `<head>` tag:
+
+```html
+<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss/raisin.min.css" rel="stylesheet">
+```
+
+You should open the file before your custom styling stylesheet.
+
+Also you can download the file `raisin.min.css` (or an uncompressed version `raisin.css`) directly from this repo.
+
+If you want to customize for your own use feel free to fork or download this repo, the `.scss` files has everything you need.
+
+### What is next?
+
+Next step in RaisinCSS is to add a customization file, so you can add colors and other branding styles to the library easily. 
 
 ## DOCS
 

@@ -1,0 +1,58 @@
+$radius-and-values: (
+  (none, 0)
+  (sm, 0.125rem)
+  (md, 0.25rem)
+  (lg, 0.5rem)
+  (full, 50%)
+  (pill, 50rem)
+);
+
+.border {
+  border: 1px solid;
+
+  @each $value in (top, right, bottom, left) {
+    &-#{$value} {
+      border-#{$value}: 1px solid;
+    }
+  }
+
+  @each $value in (solid, dotted, dashed) {
+    &-#{$value} {
+      border-style: $value
+    }
+  }
+
+  @for $n from 1 through 6 {
+    &-width-#{$n} {
+      border-width: $n + px;
+    }
+  }
+
+  @each $radium, $value in $radius-and-values {
+    &-radius-#{$radium} {
+      border-radius: $value;
+    }
+  }
+
+  &-none {
+    border: none;
+  }
+}
+
+@each $bname, $breakpoint in $breakpoints {
+  @media(min-width: $breakpoint) {
+    .#{$bname}\:border {
+      border: 1px solid;
+
+      @each $value in (top, right, bottom, left) {
+        &-#{$value} {
+          border-#{$value}: 1px solid;
+        }
+      }
+
+      &-none {
+        border: none;
+      }
+    }
+  }
+}

@@ -3280,161 +3280,6 @@ table {
     height: 100vh; }
   .xl\:h-auto {
     height: auto; } }
-.bg-fixed {
-  background-attachment: fixed; }
-.bg-local {
-  background-attachment: local; }
-.bg-scroll {
-  background-attachment: scroll; }
-.bg-auto {
-  background-size: auto; }
-.bg-cover {
-  background-size: cover; }
-.bg-contain {
-  background-size: contain; }
-.bg-center {
-  background-position: center; }
-.bg-top {
-  background-position: top; }
-.bg-right {
-  background-position: right; }
-.bg-bottom {
-  background-position: bottom; }
-.bg-left {
-  background-position: left; }
-.bg-right-top {
-  background-position: right top; }
-.bg-right-bottom {
-  background-position: right bottom; }
-.bg-left-top {
-  background-position: left top; }
-.bg-left-bottom {
-  background-position: left bottom; }
-
-@media (min-width: 576px) {
-  .sm\:bg-fixed {
-    background-attachment: fixed; }
-  .sm\:bg-local {
-    background-attachment: local; }
-  .sm\:bg-scroll {
-    background-attachment: scroll; }
-  .sm\:bg-auto {
-    background-size: auto; }
-  .sm\:bg-cover {
-    background-size: cover; }
-  .sm\:bg-contain {
-    background-size: contain; }
-  .sm\:bg-center {
-    background-position: center; }
-  .sm\:bg-top {
-    background-position: top; }
-  .sm\:bg-right {
-    background-position: right; }
-  .sm\:bg-bottom {
-    background-position: bottom; }
-  .sm\:bg-left {
-    background-position: left; }
-  .sm\:bg-right-top {
-    background-position: right top; }
-  .sm\:bg-right-bottom {
-    background-position: right bottom; }
-  .sm\:bg-left-top {
-    background-position: left top; }
-  .sm\:bg-left-bottom {
-    background-position: left bottom; } }
-@media (min-width: 768px) {
-  .md\:bg-fixed {
-    background-attachment: fixed; }
-  .md\:bg-local {
-    background-attachment: local; }
-  .md\:bg-scroll {
-    background-attachment: scroll; }
-  .md\:bg-auto {
-    background-size: auto; }
-  .md\:bg-cover {
-    background-size: cover; }
-  .md\:bg-contain {
-    background-size: contain; }
-  .md\:bg-center {
-    background-position: center; }
-  .md\:bg-top {
-    background-position: top; }
-  .md\:bg-right {
-    background-position: right; }
-  .md\:bg-bottom {
-    background-position: bottom; }
-  .md\:bg-left {
-    background-position: left; }
-  .md\:bg-right-top {
-    background-position: right top; }
-  .md\:bg-right-bottom {
-    background-position: right bottom; }
-  .md\:bg-left-top {
-    background-position: left top; }
-  .md\:bg-left-bottom {
-    background-position: left bottom; } }
-@media (min-width: 992px) {
-  .lg\:bg-fixed {
-    background-attachment: fixed; }
-  .lg\:bg-local {
-    background-attachment: local; }
-  .lg\:bg-scroll {
-    background-attachment: scroll; }
-  .lg\:bg-auto {
-    background-size: auto; }
-  .lg\:bg-cover {
-    background-size: cover; }
-  .lg\:bg-contain {
-    background-size: contain; }
-  .lg\:bg-center {
-    background-position: center; }
-  .lg\:bg-top {
-    background-position: top; }
-  .lg\:bg-right {
-    background-position: right; }
-  .lg\:bg-bottom {
-    background-position: bottom; }
-  .lg\:bg-left {
-    background-position: left; }
-  .lg\:bg-right-top {
-    background-position: right top; }
-  .lg\:bg-right-bottom {
-    background-position: right bottom; }
-  .lg\:bg-left-top {
-    background-position: left top; }
-  .lg\:bg-left-bottom {
-    background-position: left bottom; } }
-@media (min-width: 1200px) {
-  .xl\:bg-fixed {
-    background-attachment: fixed; }
-  .xl\:bg-local {
-    background-attachment: local; }
-  .xl\:bg-scroll {
-    background-attachment: scroll; }
-  .xl\:bg-auto {
-    background-size: auto; }
-  .xl\:bg-cover {
-    background-size: cover; }
-  .xl\:bg-contain {
-    background-size: contain; }
-  .xl\:bg-center {
-    background-position: center; }
-  .xl\:bg-top {
-    background-position: top; }
-  .xl\:bg-right {
-    background-position: right; }
-  .xl\:bg-bottom {
-    background-position: bottom; }
-  .xl\:bg-left {
-    background-position: left; }
-  .xl\:bg-right-top {
-    background-position: right top; }
-  .xl\:bg-right-bottom {
-    background-position: right bottom; }
-  .xl\:bg-left-top {
-    background-position: left top; }
-  .xl\:bg-left-bottom {
-    background-position: left bottom; } }
 .font-sans {
   font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
 .font-serif {
@@ -3631,6 +3476,416 @@ table {
     font-weight: 700; }
   .xl\:font-bolder {
     font-weight: 800; } }
+.text-center {
+  text-align: center; }
+.text-left {
+  text-align: left; }
+.text-right {
+  text-align: right; }
+.text-justify {
+  text-align: justify; }
+.text-underline {
+  text-decoration: underline; }
+.text-overline {
+  text-decoration: overline; }
+.text-line-through {
+  text-decoration: line-through; }
+.text-capitalize {
+  text-transform: capitalize; }
+.text-uppercase {
+  text-transform: uppercase; }
+.text-lowercase {
+  text-transform: lowercase; }
+
+@media (min-width: 576px) {
+  .sm\:text-center {
+    text-align: center; }
+  .sm\:text-left {
+    text-align: left; }
+  .sm\:text-right {
+    text-align: right; }
+  .sm\:text-justify {
+    text-align: justify; }
+  .sm\:text-underline {
+    text-decoration: underline; }
+  .sm\:text-overline {
+    text-decoration: overline; }
+  .sm\:text-line-through {
+    text-decoration: line-through; }
+  .sm\:text-capitalize {
+    text-transform: capitalize; }
+  .sm\:text-uppercase {
+    text-transform: uppercase; }
+  .sm\:text-lowercase {
+    text-transform: lowercase; } }
+@media (min-width: 768px) {
+  .md\:text-center {
+    text-align: center; }
+  .md\:text-left {
+    text-align: left; }
+  .md\:text-right {
+    text-align: right; }
+  .md\:text-justify {
+    text-align: justify; }
+  .md\:text-underline {
+    text-decoration: underline; }
+  .md\:text-overline {
+    text-decoration: overline; }
+  .md\:text-line-through {
+    text-decoration: line-through; }
+  .md\:text-capitalize {
+    text-transform: capitalize; }
+  .md\:text-uppercase {
+    text-transform: uppercase; }
+  .md\:text-lowercase {
+    text-transform: lowercase; } }
+@media (min-width: 992px) {
+  .lg\:text-center {
+    text-align: center; }
+  .lg\:text-left {
+    text-align: left; }
+  .lg\:text-right {
+    text-align: right; }
+  .lg\:text-justify {
+    text-align: justify; }
+  .lg\:text-underline {
+    text-decoration: underline; }
+  .lg\:text-overline {
+    text-decoration: overline; }
+  .lg\:text-line-through {
+    text-decoration: line-through; }
+  .lg\:text-capitalize {
+    text-transform: capitalize; }
+  .lg\:text-uppercase {
+    text-transform: uppercase; }
+  .lg\:text-lowercase {
+    text-transform: lowercase; } }
+@media (min-width: 1200px) {
+  .xl\:text-center {
+    text-align: center; }
+  .xl\:text-left {
+    text-align: left; }
+  .xl\:text-right {
+    text-align: right; }
+  .xl\:text-justify {
+    text-align: justify; }
+  .xl\:text-underline {
+    text-decoration: underline; }
+  .xl\:text-overline {
+    text-decoration: overline; }
+  .xl\:text-line-through {
+    text-decoration: line-through; }
+  .xl\:text-capitalize {
+    text-transform: capitalize; }
+  .xl\:text-uppercase {
+    text-transform: uppercase; }
+  .xl\:text-lowercase {
+    text-transform: lowercase; } }
+.bg-fixed {
+  background-attachment: fixed; }
+.bg-local {
+  background-attachment: local; }
+.bg-scroll {
+  background-attachment: scroll; }
+.bg-auto {
+  background-size: auto; }
+.bg-cover {
+  background-size: cover; }
+.bg-contain {
+  background-size: contain; }
+.bg-center {
+  background-position: center; }
+.bg-top {
+  background-position: top; }
+.bg-right {
+  background-position: right; }
+.bg-bottom {
+  background-position: bottom; }
+.bg-left {
+  background-position: left; }
+.bg-right-top {
+  background-position: right top; }
+.bg-right-bottom {
+  background-position: right bottom; }
+.bg-left-top {
+  background-position: left top; }
+.bg-left-bottom {
+  background-position: left bottom; }
+
+@media (min-width: 576px) {
+  .sm\:bg-fixed {
+    background-attachment: fixed; }
+  .sm\:bg-local {
+    background-attachment: local; }
+  .sm\:bg-scroll {
+    background-attachment: scroll; }
+  .sm\:bg-auto {
+    background-size: auto; }
+  .sm\:bg-cover {
+    background-size: cover; }
+  .sm\:bg-contain {
+    background-size: contain; }
+  .sm\:bg-center {
+    background-position: center; }
+  .sm\:bg-top {
+    background-position: top; }
+  .sm\:bg-right {
+    background-position: right; }
+  .sm\:bg-bottom {
+    background-position: bottom; }
+  .sm\:bg-left {
+    background-position: left; }
+  .sm\:bg-right-top {
+    background-position: right top; }
+  .sm\:bg-right-bottom {
+    background-position: right bottom; }
+  .sm\:bg-left-top {
+    background-position: left top; }
+  .sm\:bg-left-bottom {
+    background-position: left bottom; } }
+@media (min-width: 768px) {
+  .md\:bg-fixed {
+    background-attachment: fixed; }
+  .md\:bg-local {
+    background-attachment: local; }
+  .md\:bg-scroll {
+    background-attachment: scroll; }
+  .md\:bg-auto {
+    background-size: auto; }
+  .md\:bg-cover {
+    background-size: cover; }
+  .md\:bg-contain {
+    background-size: contain; }
+  .md\:bg-center {
+    background-position: center; }
+  .md\:bg-top {
+    background-position: top; }
+  .md\:bg-right {
+    background-position: right; }
+  .md\:bg-bottom {
+    background-position: bottom; }
+  .md\:bg-left {
+    background-position: left; }
+  .md\:bg-right-top {
+    background-position: right top; }
+  .md\:bg-right-bottom {
+    background-position: right bottom; }
+  .md\:bg-left-top {
+    background-position: left top; }
+  .md\:bg-left-bottom {
+    background-position: left bottom; } }
+@media (min-width: 992px) {
+  .lg\:bg-fixed {
+    background-attachment: fixed; }
+  .lg\:bg-local {
+    background-attachment: local; }
+  .lg\:bg-scroll {
+    background-attachment: scroll; }
+  .lg\:bg-auto {
+    background-size: auto; }
+  .lg\:bg-cover {
+    background-size: cover; }
+  .lg\:bg-contain {
+    background-size: contain; }
+  .lg\:bg-center {
+    background-position: center; }
+  .lg\:bg-top {
+    background-position: top; }
+  .lg\:bg-right {
+    background-position: right; }
+  .lg\:bg-bottom {
+    background-position: bottom; }
+  .lg\:bg-left {
+    background-position: left; }
+  .lg\:bg-right-top {
+    background-position: right top; }
+  .lg\:bg-right-bottom {
+    background-position: right bottom; }
+  .lg\:bg-left-top {
+    background-position: left top; }
+  .lg\:bg-left-bottom {
+    background-position: left bottom; } }
+@media (min-width: 1200px) {
+  .xl\:bg-fixed {
+    background-attachment: fixed; }
+  .xl\:bg-local {
+    background-attachment: local; }
+  .xl\:bg-scroll {
+    background-attachment: scroll; }
+  .xl\:bg-auto {
+    background-size: auto; }
+  .xl\:bg-cover {
+    background-size: cover; }
+  .xl\:bg-contain {
+    background-size: contain; }
+  .xl\:bg-center {
+    background-position: center; }
+  .xl\:bg-top {
+    background-position: top; }
+  .xl\:bg-right {
+    background-position: right; }
+  .xl\:bg-bottom {
+    background-position: bottom; }
+  .xl\:bg-left {
+    background-position: left; }
+  .xl\:bg-right-top {
+    background-position: right top; }
+  .xl\:bg-right-bottom {
+    background-position: right bottom; }
+  .xl\:bg-left-top {
+    background-position: left top; }
+  .xl\:bg-left-bottom {
+    background-position: left bottom; } }
+.border {
+  border: 1px solid; }
+  .border-top {
+    border-top: 1px solid; }
+  .border-right {
+    border-right: 1px solid; }
+  .border-bottom {
+    border-bottom: 1px solid; }
+  .border-left {
+    border-left: 1px solid; }
+  .border-solid {
+    border-style: solid; }
+  .border-dotted {
+    border-style: dotted; }
+  .border-dashed {
+    border-style: dashed; }
+  .border-width-1 {
+    border-width: 1px; }
+  .border-width-2 {
+    border-width: 2px; }
+  .border-width-3 {
+    border-width: 3px; }
+  .border-width-4 {
+    border-width: 4px; }
+  .border-width-5 {
+    border-width: 5px; }
+  .border-width-6 {
+    border-width: 6px; }
+  .border-radius-none {
+    border-radius: 0; }
+  .border-radius-sm {
+    border-radius: 0.125rem; }
+  .border-radius-md {
+    border-radius: 0.25rem; }
+  .border-radius-lg {
+    border-radius: 0.5rem; }
+  .border-radius-full {
+    border-radius: 50%; }
+  .border-radius-pill {
+    border-radius: 50rem; }
+  .border-none {
+    border: none; }
+
+@media (min-width: 576px) {
+  .sm\:border {
+    border: 1px solid; }
+    .sm\:border-top {
+      border-top: 1px solid; }
+    .sm\:border-right {
+      border-right: 1px solid; }
+    .sm\:border-bottom {
+      border-bottom: 1px solid; }
+    .sm\:border-left {
+      border-left: 1px solid; }
+    .sm\:border-none {
+      border: none; } }
+@media (min-width: 768px) {
+  .md\:border {
+    border: 1px solid; }
+    .md\:border-top {
+      border-top: 1px solid; }
+    .md\:border-right {
+      border-right: 1px solid; }
+    .md\:border-bottom {
+      border-bottom: 1px solid; }
+    .md\:border-left {
+      border-left: 1px solid; }
+    .md\:border-none {
+      border: none; } }
+@media (min-width: 992px) {
+  .lg\:border {
+    border: 1px solid; }
+    .lg\:border-top {
+      border-top: 1px solid; }
+    .lg\:border-right {
+      border-right: 1px solid; }
+    .lg\:border-bottom {
+      border-bottom: 1px solid; }
+    .lg\:border-left {
+      border-left: 1px solid; }
+    .lg\:border-none {
+      border: none; } }
+@media (min-width: 1200px) {
+  .xl\:border {
+    border: 1px solid; }
+    .xl\:border-top {
+      border-top: 1px solid; }
+    .xl\:border-right {
+      border-right: 1px solid; }
+    .xl\:border-bottom {
+      border-bottom: 1px solid; }
+    .xl\:border-left {
+      border-left: 1px solid; }
+    .xl\:border-none {
+      border: none; } }
+.shadow-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+.shadow-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+.shadow-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+.shadow-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+.shadow-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+@media (min-width: 576px) {
+  .sm\:shadow-1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .sm\:shadow-2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .sm\:shadow-3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  .sm\:shadow-4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .sm\:shadow-5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); } }
+@media (min-width: 768px) {
+  .md\:shadow-1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .md\:shadow-2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .md\:shadow-3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  .md\:shadow-4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .md\:shadow-5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); } }
+@media (min-width: 992px) {
+  .lg\:shadow-1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .lg\:shadow-2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .lg\:shadow-3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  .lg\:shadow-4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .lg\:shadow-5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); } }
+@media (min-width: 1200px) {
+  .xl\:shadow-1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .xl\:shadow-2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .xl\:shadow-3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  .xl\:shadow-4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .xl\:shadow-5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); } }
 .container {
   width: 100%;
   margin: 0 auto; }

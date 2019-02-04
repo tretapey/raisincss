@@ -1,0 +1,43 @@
+.text {
+  @each $value in (center, left, right, justify) { 
+    &-#{$value} {
+      text-align: $value;
+    }
+  }
+
+  @each $value in (underline, overline, line-through) {
+    &-#{$value} {
+      text-decoration: $value;
+    }
+  }
+
+  @each $value in (capitalize, uppercase, lowercase) {
+    &-#{$value} {
+      text-transform: $value;
+    }
+  }
+}
+
+@each $bname, $breakpoint in $breakpoints {
+  @media(min-width: $breakpoint) {
+    .#{$bname}\:text {
+      @each $value in (center, left, right, justify) { 
+        &-#{$value} {
+          text-align: $value;
+        }
+      }
+
+      @each $value in (underline, overline, line-through) {
+        &-#{$value} {
+          text-decoration: $value;
+        }
+      }
+
+      @each $value in (capitalize, uppercase, lowercase) {
+        &-#{$value} {
+          text-transform: $value;
+        }
+      }
+    }
+  }
+}

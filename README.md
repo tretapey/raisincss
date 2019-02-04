@@ -2,12 +2,6 @@
 
 An Utility CSS only library
 
-### TODO:
-
-- Border
-- Box shadow
-- text (transforms and decorations)
-
 ## DOCS
 
 ### Breakpoints
@@ -252,40 +246,6 @@ or
 - `.lg:h-full`
 - `.xl:h-auto`
 
-#### Background
-
-We can set background attachment:
-
-- `.bg-fixed` -> `background-attachment: fixed`
-- `.bg-local` -> `background-attachment: local`
-- `.bg-scroll` -> `background-attachment: scroll`
-
-Background position:
-
-- `.bg-center`
-- `.bg-top`
-- `.bg-right`
-- `.bg-bottom`
-- `.bg-left`
-- `.bg-right-top`
-- `.bg-right-bottom`
-- `.bg-left-top`
-- `.bg-left-bottom`
-
-And background repeat:
-
-- `.bg-repeat`
-- `.bg-no-repeat`
-- `.bg-repeat-x`
-- `.bg-repeat-y`
-
-And all this classes can be prefixed with a proper breakpoint, i.e:
-
-- `.sm:bg-center`
-- `.md:bg-no-repeat`
-- `.lg:bg-fixed`
-- `.xl:bg-left-top`
-
 #### Font
 
 Setting font-family:
@@ -327,6 +287,110 @@ We can use breackpoint prefixes on this classes also (except font-family), i.e:
 - `.md:font-thin`
 - `.lg:font-xs`
 - `.xl:font-bolder`
+
+#### Text
+
+- `.text-center`
+- `.text-left`
+- `.text-right`
+- `.text-justify`
+- `.text-underline`
+- `.text-overline`
+- `.text-line-through`
+- `.text-capitalize`
+- `.text-uppercase`
+- `.text-lowercase`
+
+or
+
+- `sm:text-center`
+- `md:text-underline`
+- `lg:text-uppercase`
+- `xl:text-justify`
+
+#### Background
+
+We can set background attachment:
+
+- `.bg-fixed` -> `background-attachment: fixed`
+- `.bg-local` -> `background-attachment: local`
+- `.bg-scroll` -> `background-attachment: scroll`
+
+Background position:
+
+- `.bg-center`
+- `.bg-top`
+- `.bg-right`
+- `.bg-bottom`
+- `.bg-left`
+- `.bg-right-top`
+- `.bg-right-bottom`
+- `.bg-left-top`
+- `.bg-left-bottom`
+
+And background repeat:
+
+- `.bg-repeat`
+- `.bg-no-repeat`
+- `.bg-repeat-x`
+- `.bg-repeat-y`
+
+And all this classes can be prefixed with a proper breakpoint, i.e:
+
+- `.sm:bg-center`
+- `.md:bg-no-repeat`
+- `.lg:bg-fixed`
+- `.xl:bg-left-top`
+
+#### Border
+
+For border property the options are:
+
+- `.border`
+- `.border-top`
+- `.border-right`
+- `.border-bottom`
+- `.border-left`
+- `.border-solid`
+- `.border-dotted`
+- `.border-dashed`
+- `.border-none`
+
+We can set breakpoints for this classes also:
+
+- `.sm:border`
+- `.md:border-top`
+- `.lg:border-bottom`
+- `.xl:border-none`
+
+By default the border width will be of 1px, we can change that till 6px adding:
+
+- `.border-width-{1 to 6}`
+
+Also we can change the border radius adding:
+
+- `.border-radius-sm` -> `border-radius: 0.125rem`
+- `.border-radius-md` -> `border-radius: 0.25rem`
+- `.border-radius-lg` -> `border-radius: 0.5rem`
+- `.border-radius-full` -> `border-radius: 50%`
+- `.border-radius-pill` -> `border-radius: 50rem`
+
+#### Shadow
+
+The box-shadow property is base on the material design elevation pattern, the values are:
+
+- `.shadow-1` 
+- `.shadow-2`
+- `.shadow-3`
+- `.shadow-4`
+- `.shadow-5`
+
+We can use breakpoints as well:
+
+- `.sm:shadow-1`
+- `.md:shadow-2`
+- `.lg:shadow-4`
+- `.xl:shadow-5`
 
 ### Container
 

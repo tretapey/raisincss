@@ -3886,6 +3886,126 @@ table {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   .xl\:shadow-5 {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); } }
+.list-outside {
+  list-style-position: outside; }
+.list-inside {
+  list-style-position: inside; }
+.list-disc {
+  list-style-type: disc; }
+.list-circle {
+  list-style-type: circle; }
+.list-square {
+  list-style-type: square; }
+.list-decimal {
+  list-style-type: decimal; }
+.list-lower-alpha {
+  list-style-type: lower-alpha; }
+.list-upper-alpha {
+  list-style-type: upper-alpha; }
+.list-lower-roman {
+  list-style-type: lower-roman; }
+.list-upper-roman {
+  list-style-type: upper-roman; }
+.list-unstyled {
+  list-style: none;
+  padding: 0; }
+
+@media (min-width: 576px) {
+  .sm\:list-outside {
+    list-style-position: outside; }
+  .sm\:list-inside {
+    list-style-position: inside; }
+  .sm\:list-disc {
+    list-style-type: disc; }
+  .sm\:list-circle {
+    list-style-type: circle; }
+  .sm\:list-square {
+    list-style-type: square; }
+  .sm\:list-decimal {
+    list-style-type: decimal; }
+  .sm\:list-lower-alpha {
+    list-style-type: lower-alpha; }
+  .sm\:list-upper-alpha {
+    list-style-type: upper-alpha; }
+  .sm\:list-lower-roman {
+    list-style-type: lower-roman; }
+  .sm\:list-upper-roman {
+    list-style-type: upper-roman; }
+  .sm\:list-unstyled {
+    list-style: none;
+    padding: 0; } }
+@media (min-width: 768px) {
+  .md\:list-outside {
+    list-style-position: outside; }
+  .md\:list-inside {
+    list-style-position: inside; }
+  .md\:list-disc {
+    list-style-type: disc; }
+  .md\:list-circle {
+    list-style-type: circle; }
+  .md\:list-square {
+    list-style-type: square; }
+  .md\:list-decimal {
+    list-style-type: decimal; }
+  .md\:list-lower-alpha {
+    list-style-type: lower-alpha; }
+  .md\:list-upper-alpha {
+    list-style-type: upper-alpha; }
+  .md\:list-lower-roman {
+    list-style-type: lower-roman; }
+  .md\:list-upper-roman {
+    list-style-type: upper-roman; }
+  .md\:list-unstyled {
+    list-style: none;
+    padding: 0; } }
+@media (min-width: 992px) {
+  .lg\:list-outside {
+    list-style-position: outside; }
+  .lg\:list-inside {
+    list-style-position: inside; }
+  .lg\:list-disc {
+    list-style-type: disc; }
+  .lg\:list-circle {
+    list-style-type: circle; }
+  .lg\:list-square {
+    list-style-type: square; }
+  .lg\:list-decimal {
+    list-style-type: decimal; }
+  .lg\:list-lower-alpha {
+    list-style-type: lower-alpha; }
+  .lg\:list-upper-alpha {
+    list-style-type: upper-alpha; }
+  .lg\:list-lower-roman {
+    list-style-type: lower-roman; }
+  .lg\:list-upper-roman {
+    list-style-type: upper-roman; }
+  .lg\:list-unstyled {
+    list-style: none;
+    padding: 0; } }
+@media (min-width: 1200px) {
+  .xl\:list-outside {
+    list-style-position: outside; }
+  .xl\:list-inside {
+    list-style-position: inside; }
+  .xl\:list-disc {
+    list-style-type: disc; }
+  .xl\:list-circle {
+    list-style-type: circle; }
+  .xl\:list-square {
+    list-style-type: square; }
+  .xl\:list-decimal {
+    list-style-type: decimal; }
+  .xl\:list-lower-alpha {
+    list-style-type: lower-alpha; }
+  .xl\:list-upper-alpha {
+    list-style-type: upper-alpha; }
+  .xl\:list-lower-roman {
+    list-style-type: lower-roman; }
+  .xl\:list-upper-roman {
+    list-style-type: upper-roman; }
+  .xl\:list-unstyled {
+    list-style: none;
+    padding: 0; } }
 .container {
   width: 100%;
   margin: 0 auto; }

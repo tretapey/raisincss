@@ -224,7 +224,7 @@ And we can use any breakpoint prefix, i.e:
 - `.w-1/3` -> `width: 33.33333%`
 - `.w-2/3` -> `width: 66.66667%`
 - `.w-1/4` -> `width: 25%`
-- `.w-2/4` -> `width: 75%`
+- `.w-3/4` -> `width: 75%`
 - `.w-1/5` -> `width: 20%`
 - `.w-2/5` -> `width: 40%`
 - `.w-3/5` -> `width: 60%`
@@ -237,7 +237,7 @@ And we can use any breakpoint prefix, i.e:
 or
 
 - `.sm:w-1/2`
-- `.md:w-2/4`
+- `.md:w-3/4`
 - `.lg:w-full`
 - `.xl:w-auto`
 
@@ -247,7 +247,7 @@ or
 - `.h-1/3` -> `height: 33.33333%`
 - `.h-2/3` -> `height: 66.66667%`
 - `.h-1/4` -> `height: 25%`
-- `.h-2/4` -> `height: 75%`
+- `.h-3/4` -> `height: 75%`
 - `.h-1/5` -> `height: 20%`
 - `.h-2/5` -> `height: 40%`
 - `.h-3/5` -> `height: 60%`
@@ -260,7 +260,7 @@ or
 or
 
 - `.sm:h-1/2`
-- `.md:h-2/4`
+- `.md:h-3/4`
 - `.lg:h-full`
 - `.xl:h-auto`
 

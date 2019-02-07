@@ -3018,7 +3018,7 @@ table {
   width: 66.66667%; }
 .w-1\/4 {
   width: 25%; }
-.w-2\/4 {
+.w-3\/4 {
   width: 75%; }
 .w-1\/5 {
   width: 20%; }
@@ -3046,7 +3046,7 @@ table {
     width: 66.66667%; }
   .sm\:w-1\/4 {
     width: 25%; }
-  .sm\:w-2\/4 {
+  .sm\:w-3\/4 {
     width: 75%; }
   .sm\:w-1\/5 {
     width: 20%; }
@@ -3073,7 +3073,7 @@ table {
     width: 66.66667%; }
   .md\:w-1\/4 {
     width: 25%; }
-  .md\:w-2\/4 {
+  .md\:w-3\/4 {
     width: 75%; }
   .md\:w-1\/5 {
     width: 20%; }
@@ -3100,7 +3100,7 @@ table {
     width: 66.66667%; }
   .lg\:w-1\/4 {
     width: 25%; }
-  .lg\:w-2\/4 {
+  .lg\:w-3\/4 {
     width: 75%; }
   .lg\:w-1\/5 {
     width: 20%; }
@@ -3127,7 +3127,7 @@ table {
     width: 66.66667%; }
   .xl\:w-1\/4 {
     width: 25%; }
-  .xl\:w-2\/4 {
+  .xl\:w-3\/4 {
     width: 75%; }
   .xl\:w-1\/5 {
     width: 20%; }
@@ -3153,7 +3153,7 @@ table {
   height: 66.66667%; }
 .h-1\/4 {
   height: 25%; }
-.h-2\/4 {
+.h-3\/4 {
   height: 75%; }
 .h-1\/5 {
   height: 20%; }
@@ -3181,7 +3181,7 @@ table {
     height: 66.66667%; }
   .sm\:h-1\/4 {
     height: 25%; }
-  .sm\:h-2\/4 {
+  .sm\:h-3\/4 {
     height: 75%; }
   .sm\:h-1\/5 {
     height: 20%; }
@@ -3208,7 +3208,7 @@ table {
     height: 66.66667%; }
   .md\:h-1\/4 {
     height: 25%; }
-  .md\:h-2\/4 {
+  .md\:h-3\/4 {
     height: 75%; }
   .md\:h-1\/5 {
     height: 20%; }
@@ -3235,7 +3235,7 @@ table {
     height: 66.66667%; }
   .lg\:h-1\/4 {
     height: 25%; }
-  .lg\:h-2\/4 {
+  .lg\:h-3\/4 {
     height: 75%; }
   .lg\:h-1\/5 {
     height: 20%; }
@@ -3262,7 +3262,7 @@ table {
     height: 66.66667%; }
   .xl\:h-1\/4 {
     height: 25%; }
-  .xl\:h-2\/4 {
+  .xl\:h-3\/4 {
     height: 75%; }
   .xl\:h-1\/5 {
     height: 20%; }

@@ -16,15 +16,9 @@ Add this to the `<head>` tag:
 <link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@master/raisin.min.css" rel="stylesheet">
 ```
 
-You should open the file before your custom styling stylesheet.
-
-Also you can download the file `raisin.min.css` (or an uncompressed version `raisin.css`) directly from this repo.
+Also you can download the file `raisin.min.css` (or an uncompressed version `raisin.css`) directly from this repo and add it manually.
 
 If you want to customize for your own use feel free to fork or download this repo, the `.scss` files has everything you need.
-
-### What is next?
-
-Next step in RaisinCSS is to add a customization file, so you can add colors and other branding styles to the library easily. 
 
 ## DOCS
 
@@ -478,7 +472,7 @@ Will have this css properties:
 }
 ```
 
-We alse con add the proper breakpoints:
+We also con add the proper breakpoints:
 
 - `.sm:has-{1 to 12}-columns` or
 - `.sm:has-{1 to 12}-rows` or
@@ -526,7 +520,7 @@ Also we can use on any grid item:
 - `.justify-self-{start | end | center | stretch}`
 - `.align-self-{start | end | center | stretch}`
 
-And of course we can add any breakpoint prefix, i.e:
+And we can add any breakpoint prefix, i.e:
 
 - `.sm:justify-self-center`
 - `.md:align-self-end`

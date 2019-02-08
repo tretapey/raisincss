@@ -173,7 +173,7 @@ Or use the x and y margins:
 - `.mx-{0 to 12}`
 - `.my-{0 to 12}`
 - `.mx-auto`
-- `.ml-auto`
+- `.my-auto`
 
 And we can use any breakpoint prefix, i.e:
 
@@ -440,7 +440,7 @@ Any element with the `.container` class will be centered on screen; with each br
 - `lg`: 960px max width;
 - `xl`: 1140px max width;
 
-Using the `.container-fluid` class the element will go 100% width on every screen size.
+Using the `.container-fluid` class the element will go 100% width.
 
 ### Grid
 
@@ -472,7 +472,7 @@ Will have this css properties:
 }
 ```
 
-We also con add the proper breakpoints:
+We also can add the proper breakpoints:
 
 - `.sm:has-{1 to 12}-columns` or
 - `.sm:has-{1 to 12}-rows` or

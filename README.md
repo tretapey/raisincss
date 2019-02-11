@@ -13,7 +13,7 @@ An Utility CSS only library.
 Add this to the `<head>` tag:
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@master/raisin.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@latest/raisin.min.css" rel="stylesheet">
 ```
 
 Also you can download the file `raisin.min.css` (or an uncompressed version `raisin.css`) directly from this repo and add it manually.

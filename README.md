@@ -220,6 +220,7 @@ And we can use any breakpoint prefix, i.e:
 
 #### Width
 
+- `.w-0` -> `width: 0`
 - `.w-1/2` -> `width: 50%`
 - `.w-1/3` -> `width: 33.33333%`
 - `.w-2/3` -> `width: 66.66667%`
@@ -243,6 +244,7 @@ or
 
 #### Height
 
+- `.h-0` -> `height: 0`
 - `.h-1/2` -> `height: 50%`
 - `.h-1/3` -> `height: 33.33333%`
 - `.h-2/3` -> `height: 66.66667%`

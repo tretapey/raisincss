@@ -16,7 +16,7 @@ Add this to the `<head>` tag:
 <link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@latest/raisin.min.css" rel="stylesheet">
 ```
 
-Also you can download the file `raisin.min.css` (or an uncompressed version `raisin.css`) directly from this repo and add it manually.
+Also, you can download the file `raisin.min.css` (or an uncompressed version `raisin.css`) directly from this repo and add it manually.
 
 If you want to customize for your own use feel free to fork or download this repo, the `.scss` files has everything you need.
 
@@ -45,7 +45,7 @@ We can set the display property as follows:
 
 Note: Flex display in a different section
 
-Also we can use the breakpoints prefixes, i.e:
+Also, we can use the breakpoints prefixes, i.e:
 
 - `.sm:display-none`
 - `.md:display-block`
@@ -387,7 +387,7 @@ By default the border width will be of 1px, we can change that till 6px adding:
 
 - `.border-width-{1 to 6}`
 
-Also we can change the border radius adding:
+Also, we can change the border radius adding:
 
 - `.border-radius-sm` -> `border-radius: 0.125rem`
 - `.border-radius-md` -> `border-radius: 0.25rem`
@@ -489,7 +489,7 @@ We can also use this classes on a `.grid` element:
 - `.align-content-{start | end | center | stretch | space-around | space-between | space-evenly}`
 - `.auto-flow-{row | column}`
 
-Also we can add a fixed gap between columns and rows in the grid:
+Also, we can add a fixed gap between columns and rows in the grid:
 
 - `.column-gap-{5 | 10 | 15 | 20... | 60}`
 - `.row-gap-{5 | 10 | 15 | 20... | 60}`
@@ -517,7 +517,7 @@ Any items inside the grid will be auto positioned, we can use this classes on a 
 - `.row-end-{1 to 12}`
 - `.row-span-{1 to 12}`
 
-Also we can use on any grid item:
+Also, we can use on any grid item:
 
 - `.justify-self-{start | end | center | stretch}`
 - `.align-self-{start | end | center | stretch}`
@@ -559,7 +559,7 @@ Here an example of a layout grid:
 
 ### Flex
 
-We can use `.flex` to set 'display:flex' on an element. Also we can set this property on each breakpoint:
+We can use `.flex` to set 'display:flex' on an element. Also, we can set this property on each breakpoint:
 
 - `.sm:flex`
 - `.md:flex`

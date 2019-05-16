@@ -23,6 +23,12 @@ $bg-sizes: (auto, cover, contain);
     }
   }
 
+  @each $repeat in $bg-repeats {
+    &-#{$repeat} {
+      background-repeat: $repeat;
+    }
+  }
+
   @each $size in $bg-sizes {
     &-#{$size} {
       background-size: $size;
@@ -42,6 +48,12 @@ $bg-sizes: (auto, cover, contain);
       @each $attachment in $bg-attachments {
         &-#{$attachment} {
           background-attachment: $attachment;
+        }
+      }
+
+      @each $repeat in $bg-repeats {
+        &-#{$repeat} {
+          background-repeat: $repeat;
         }
       }
 

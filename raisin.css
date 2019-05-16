@@ -3607,6 +3607,14 @@ table {
   background-attachment: local; }
 .bg-scroll {
   background-attachment: scroll; }
+.bg-repeat {
+  background-repeat: repeat; }
+.bg-no-repeat {
+  background-repeat: no-repeat; }
+.bg-repeat-x {
+  background-repeat: repeat-x; }
+.bg-repeat-y {
+  background-repeat: repeat-y; }
 .bg-auto {
   background-size: auto; }
 .bg-cover {
@@ -3639,6 +3647,14 @@ table {
     background-attachment: local; }
   .sm\:bg-scroll {
     background-attachment: scroll; }
+  .sm\:bg-repeat {
+    background-repeat: repeat; }
+  .sm\:bg-no-repeat {
+    background-repeat: no-repeat; }
+  .sm\:bg-repeat-x {
+    background-repeat: repeat-x; }
+  .sm\:bg-repeat-y {
+    background-repeat: repeat-y; }
   .sm\:bg-auto {
     background-size: auto; }
   .sm\:bg-cover {
@@ -3670,6 +3686,14 @@ table {
     background-attachment: local; }
   .md\:bg-scroll {
     background-attachment: scroll; }
+  .md\:bg-repeat {
+    background-repeat: repeat; }
+  .md\:bg-no-repeat {
+    background-repeat: no-repeat; }
+  .md\:bg-repeat-x {
+    background-repeat: repeat-x; }
+  .md\:bg-repeat-y {
+    background-repeat: repeat-y; }
   .md\:bg-auto {
     background-size: auto; }
   .md\:bg-cover {
@@ -3701,6 +3725,14 @@ table {
     background-attachment: local; }
   .lg\:bg-scroll {
     background-attachment: scroll; }
+  .lg\:bg-repeat {
+    background-repeat: repeat; }
+  .lg\:bg-no-repeat {
+    background-repeat: no-repeat; }
+  .lg\:bg-repeat-x {
+    background-repeat: repeat-x; }
+  .lg\:bg-repeat-y {
+    background-repeat: repeat-y; }
   .lg\:bg-auto {
     background-size: auto; }
   .lg\:bg-cover {
@@ -3732,6 +3764,14 @@ table {
     background-attachment: local; }
   .xl\:bg-scroll {
     background-attachment: scroll; }
+  .xl\:bg-repeat {
+    background-repeat: repeat; }
+  .xl\:bg-no-repeat {
+    background-repeat: no-repeat; }
+  .xl\:bg-repeat-x {
+    background-repeat: repeat-x; }
+  .xl\:bg-repeat-y {
+    background-repeat: repeat-y; }
   .xl\:bg-auto {
     background-size: auto; }
   .xl\:bg-cover {

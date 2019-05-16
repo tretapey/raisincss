@@ -355,12 +355,18 @@ And background repeat:
 - `.bg-repeat-x`
 - `.bg-repeat-y`
 
+And background size:
+
+- `.bg-auto`
+- `.bg-cover`
+- `.bg-contain`
+
 And all this classes can be prefixed with a proper breakpoint, i.e:
 
 - `.sm:bg-center`
 - `.md:bg-no-repeat`
 - `.lg:bg-fixed`
-- `.xl:bg-left-top`
+- `.xl:bg-cover`
 
 #### Border
 

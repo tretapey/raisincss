@@ -4067,12 +4067,20 @@ table {
     list-style: none;
     padding: 0; } }
 .ratio-21by9::before {
+  display: block;
+  content: "";
   padding-top: 42.857143%; }
 .ratio-16by9::before {
+  display: block;
+  content: "";
   padding-top: 56.25%; }
 .ratio-4by3::before {
+  display: block;
+  content: "";
   padding-top: 75%; }
 .ratio-1by1::before {
+  display: block;
+  content: "";
   padding-top: 100%; }
 
 .container {

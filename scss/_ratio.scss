@@ -8,6 +8,8 @@ $ratios-and-values: (
 .ratio {
   @each $ratio, $value in $ratios-and-values {
     &-#{$ratio}::before {
+      display: block;
+      content: "";
       padding-top: $value;
     }
   }

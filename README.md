@@ -2,18 +2,21 @@
 
 An Utility CSS only library.
 
-* Supports CSS Grid (Check grid section)
-* Supports Flexbox
-* Totally open to customization
-* Skeleton and utility based tool
-* Lightweight and easy to use
+- Supports CSS Grid (Check grid section)
+- Supports Flexbox
+- Totally open to customization
+- Skeleton and utility based tool
+- Lightweight and easy to use
 
 ## How to use
 
 Add this to the `<head>` tag:
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0/raisin.min.css" rel="stylesheet">
+<link
+  href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0/raisin.min.css"
+  rel="stylesheet"
+/>
 ```
 
 Also, you can download the file `raisin.min.css` (or an uncompressed version `raisin.css`) directly from this repo and add it manually.
@@ -101,6 +104,24 @@ or:
 - `.xl:relative`
 - `.md:sticky`
 
+#### Positioning
+
+We can set any positioning property from 0 to 50 with any measure we like as follows:
+
+- `.left-{ 0 | 5 | 10 | 15 | ... | 50 }-{ px | vw | rem | em | vh | % }`
+- `.right-{ 0 | 5 | 10 | 15 | ... | 50 }-{ px | vw | rem | em | vh | % }`
+- `.top-{ 0 | 5 | 10 | 15 | ... | 50 }-{ px | vw | rem | em | vh | % }`
+- `.bottom-{ 0 | 5 | 10 | 15 | ... | 50 }-{ px | vw | rem | em | vh | % }`
+
+or:
+
+- `.sm:left-{ 0 | 5 | 10 | 15 | ... | 50 }-{ px | vw | rem | em | vh | % }`
+- `.md:right-{ 0 | 5 | 10 | 15 | ... | 50 }-{ px | vw | rem | em | vh | % }`
+- `.lg:top-{ 0 | 5 | 10 | 15 | ... | 50 }-{ px | vw | rem | em | vh | % }`
+- `.xl:bottom-{ 0 | 5 | 10 | 15 | ... | 50 }-{ px | vw | rem | em | vh | % }`
+
+If we don't define a measure, then it will use pixels.
+
 #### Visibility
 
 - `.visible`
@@ -176,7 +197,6 @@ Or use the x and y margins:
 - `.my-auto`
 
 And we can use any breakpoint prefix, i.e:
-
 
 - `.sm:m-4`
 - `.md:mb-12`
@@ -405,7 +425,7 @@ Also, we can change the border radius adding:
 
 The box-shadow property is base on the material design elevation pattern, the values are:
 
-- `.shadow-1` 
+- `.shadow-1`
 - `.shadow-2`
 - `.shadow-3`
 - `.shadow-4`
@@ -420,7 +440,7 @@ We can use breakpoints as well:
 
 #### List
 
-- `.list-unstyled` 
+- `.list-unstyled`
 - `.list-outside` -> `list-style-position: outside`
 - `.list-inside` -> `list-style-position: inside`
 - `.list-disc` -> `list-style-type: disc`
@@ -434,7 +454,7 @@ We can use breakpoints as well:
 
 We can use breakpoints:
 
-- `.sm:list-unstyled` 
+- `.sm:list-unstyled`
 - `.md:list-outside`
 - `.lg:list-inside`
 - `.xl:list-disc`
@@ -465,25 +485,27 @@ Adding the class `.grid` to any element will add the `display:grid` property to 
 
 We can use grid on each breakpoint adding the prefix:
 
- `sm:grid`
- `md:grid`
- `lg:grid`
- `xl:grid`
+`sm:grid`
+`md:grid`
+`lg:grid`
+`xl:grid`
 
 By default we are adding `grid-template-columns:auto` and `grid-template-rows:auto` to a `.grid` element. For setting the columns and rows to the grid we can add:
 
 - `.has-{1 to 12}-columns` or
-- `.has-{1 to 12}-rows` 
+- `.has-{1 to 12}-rows`
 
-Note: Each columns or row will be `1fr` sized. i.e: 
+Note: Each columns or row will be `1fr` sized. i.e:
 
 ```html
 <div class="my-element grid has-12-columns has-4-rows"></div>
 ```
+
 Will have this css properties:
+
 ```css
 .my-element {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
@@ -509,7 +531,7 @@ Also, we can add a fixed gap between columns and rows in the grid:
 - `.column-gap-{5 | 10 | 15 | 20... | 60}`
 - `.row-gap-{5 | 10 | 15 | 20... | 60}`
 
-It will add the number indicated in pixels, i.e: `.column-gap-35` will add a `35px` gap between the grid columns. 
+It will add the number indicated in pixels, i.e: `.column-gap-35` will add a `35px` gap between the grid columns.
 
 Any of this classes listed above can be used with a breakpoint prefix, i.e:
 
@@ -543,33 +565,49 @@ And we can add any breakpoint prefix, i.e:
 - `.md:align-self-end`
 
 Here an example of a layout grid:
+
 ```html
-  <div class="container 
+<div
+  class="container 
     md:grid 
     has-12-columns 
     has-4-rows
     column-gap-10 
     lg:column-gap-15 
     row-gap-10 
-    justify-items-stretch" style="height:80vh">
-    <div class="header 
+    justify-items-stretch"
+  style="height:80vh"
+>
+  <div
+    class="header 
       column-start-1 
       column-span-12 
-      row-span-1" style="background:red; min-height: 100px"></div>
-    <div class="main 
+      row-span-1"
+    style="background:red; min-height: 100px"
+  ></div>
+  <div
+    class="main 
       column-start-4 
       column-end-12 
-      row-span-2" style="background:green; min-height: 100px"></div>
-    <div class="aside 
+      row-span-2"
+    style="background:green; min-height: 100px"
+  ></div>
+  <div
+    class="aside 
       column-start-1 
       row-start-2
       column-span-3 
-      row-span-2" style="background:blue; min-height: 100px"></div>
-    <div class="footer 
+      row-span-2"
+    style="background:blue; min-height: 100px"
+  ></div>
+  <div
+    class="footer 
       column-start-1 
       column-end-12 
-      row-start-4" style="background:yellow; min-height: 100px"></div>
-  </div>
+      row-start-4"
+    style="background:yellow; min-height: 100px"
+  ></div>
+</div>
 ```
 
 ### Flex
@@ -584,17 +622,20 @@ We can use `.flex` to set 'display:flex' on an element. Also, we can set this pr
 We an use this other classes on that element:
 
 ##### direction
+
 - `.flex-row` -> `flex-direction:row`
 - `.flex-column` -> `flex-direction:column`
 - `.flex-row-reverse` -> `flex-direction:row-reverse`
 - `.flex-column-reverse` -> `flex-direction:column-reverse`
 
 ##### wraping
+
 - `.flex-wrap`
 - `.flex-wrap-reverse`
 - `.flex-nowrap`
 
 ##### justify
+
 - `.justify-start` -> `justify-content: flex-start`
 - `.justify-end` -> `justify-content: flex-end`
 - `.justify-center` -> `justify-content: center`
@@ -603,6 +644,7 @@ We an use this other classes on that element:
 - `.justify-evenly` -> `justify-content: space-evenly`
 
 ##### items align
+
 - `.items-start` -> `align-items: flex-start`
 - `.items-end` -> `align-items: flex-end`
 - `.items-center` -> `align-items: center`
@@ -610,6 +652,7 @@ We an use this other classes on that element:
 - `.items-stretch` -> `align-items: stretch`
 
 ##### content align
+
 - `.content-start` -> `align-content: flex-start`
 - `.content-end` -> `align-content: flex-end`
 - `.content-center` -> `align-content: center`

@@ -8,6 +8,10 @@ An Utility CSS only library.
 - Skeleton and utility based tool
 - Lightweight and easy to use
 
+## How to contribute
+
+Fork this repo and send a pull request with your proposed changes.
+
 ## How to use
 
 Add this to the `<head>` tag:

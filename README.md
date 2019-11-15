@@ -14,7 +14,7 @@ Add this to the `<head>` tag:
 
 ```html
 <link
-  href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0/raisin.min.css"
+  href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0.1/raisin.min.css"
   rel="stylesheet"
 />
 ```

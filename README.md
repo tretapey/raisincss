@@ -17,10 +17,13 @@ Fork this repo and send a pull request with your proposed changes.
 Add this to the `<head>` tag:
 
 ```html
-<link
-  href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0.1/raisin.min.css"
-  rel="stylesheet"
-/>
+<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0.1/raisin.min.css" rel="stylesheet"/>
+```
+
+or import it in your css:
+
+```css 
+@import "https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0.1/raisin.min.css";
 ```
 
 Also, you can download the file `raisin.min.css` (or an uncompressed version `raisin.css`) directly from this repo and add it manually.

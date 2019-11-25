@@ -20,7 +20,7 @@ An Utility CSS only library.
     - [Overflow](#overflow)
     - [Position](#position)
     - [Positioning](#positioning)
-    - [Visibility](#isibility)
+    - [Visibility](#visibility)
     - [Opacity](#opacity)
     - [Z-index](#z-index)
     - [Margin](#margin)

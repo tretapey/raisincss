@@ -38,12 +38,10 @@ An Utility CSS only library.
   - [Grid](#grid)
   - [Flex](#flex)
 
-<a name="contribute" />
 ## How to contribute
 
 Fork this repo and send a pull request with your proposed changes.
 
-<a name="use" />
 ## How to use
 
 Add this to the `<head>` tag:

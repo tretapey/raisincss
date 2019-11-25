@@ -8,10 +8,42 @@ An Utility CSS only library.
 - Skeleton and utility based tool
 - Lightweight and easy to use
 
+### Table of contents
+
+- [How to contribute](#how-to-contribute)
+- [How to use](#how-to-use)
+- [DOCS](#docs)
+  - [Breakpoints](#breakpoints)
+  - [Utils](#utils)
+    - [Display](#display)
+    - [Float](#float)
+    - [Overflow](#overflow)
+    - [Position](#position)
+    - [Positioning](#positioning)
+    - [Visibility](#isibility)
+    - [Opacity](#opacity)
+    - [Z-index](#z-index)
+    - [Margin](#margin)
+    - [Padding](#padding)
+    - [Width](#width)
+    - [Height](#height)
+    - [Font](#font)
+    - [Text](#text)
+    - [Background](#background)
+    - [Border](#border)
+    - [Shadow](#shadow)
+    - [List](#list)
+    - [Ratio](#ratio)
+  - [Container](#container)
+  - [Grid](#grid)
+  - [Flex](#flex)
+
+<a name="contribute" />
 ## How to contribute
 
 Fork this repo and send a pull request with your proposed changes.
 
+<a name="use" />
 ## How to use
 
 Add this to the `<head>` tag:

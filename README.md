@@ -723,7 +723,7 @@ And we can use breakpoints prefixes also, i.e:
 
 ### Sites using RaisinCSS
 
-- https://cracss.com/ 
-- https://au-dela.ca/ 
-- https://www.vengaglobal.com/ 
+- <a href="https://cracss.com/" target="_blank">https://cracss.com/</a> 
+- <a href="https://au-dela.ca/" target="_blank">https://au-dela.ca/</a> 
+- <a href="https://www.vengaglobal.com/" target="_blank">https://www.vengaglobal.com/</a>  
 

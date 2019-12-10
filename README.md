@@ -59,7 +59,11 @@ or import it in your css:
 
 or install it via npm:
 
-`npm install raisincss --save` or `yarn add raisincss`
+```npm install raisincss --save``` 
+
+or if you prefer yarn:
+
+```yarn add raisincss```
 
 Also, you can download the file `raisin.min.css` (or an uncompressed version `raisin.css`) directly from this repo and add it manually.
 

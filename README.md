@@ -57,6 +57,10 @@ or import it in your css:
 @import "https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0.1/raisin.min.css";
 ```
 
+or install it via npm:
+
+`npm install raisincss --save` or `yarn add raisincss`
+
 Also, you can download the file `raisin.min.css` (or an uncompressed version `raisin.css`) directly from this repo and add it manually.
 
 If you want to customize for your own use feel free to fork or download this repo, the `.scss` files has everything you need.

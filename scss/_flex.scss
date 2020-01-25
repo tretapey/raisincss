@@ -1,4 +1,4 @@
-.flex {
+.#{$prefix}flex {
   display:flex;
 
   @each $direction in (row, column) {
@@ -28,7 +28,7 @@ $justifys-and-values: (
 );
 
 @each $justify, $value in $justifys-and-values {
-  .justify-#{$justify} {
+  .#{$prefix}justify-#{$justify} {
     justify-content: $value;
   }
 } 
@@ -42,11 +42,11 @@ $items-and-values: (
 );
 
 @each $item, $value in $items-and-values {
-  .items-#{$item} {
+  .#{$prefix}items-#{$item} {
     align-items: $value;
   }
 
-  .self-#{$item} {
+  .#{$prefix}self-#{$item} {
     align-self: $value;
   }
 }
@@ -61,7 +61,7 @@ $contents-and-values: (
 );
 
 @each $content, $value in $contents-and-values {
-  .content-#{$content} {
+  .#{$prefix}content-#{$content} {
     align-content: $value;
   }
 } 
@@ -69,7 +69,7 @@ $contents-and-values: (
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
 
-    .#{$bname}\:flex {
+    .#{$prefix}#{$bname}\:flex {
       display:flex;
 
       @each $direction in (row, column) {
@@ -90,23 +90,23 @@ $contents-and-values: (
     }
 
     @each $justify, $value in $justifys-and-values {
-      .#{$bname}\:justify-#{$justify} {
+      .#{$prefix}#{$bname}\:justify-#{$justify} {
         justify-content: $value;
       }
     } 
 
     @each $item, $value in $items-and-values {
-      .#{$bname}\:items-#{$item} {
+      .#{$prefix}#{$bname}\:items-#{$item} {
         align-items: $value;
       }
 
-      .#{$bname}\:self-#{$item} {
+      .#{$prefix}#{$bname}\:self-#{$item} {
         align-self: $value;
       }
     }
 
     @each $content, $value in $contents-and-values {
-      .#{$bname}\:content-#{$content} {
+      .#{$prefix}#{$bname}\:content-#{$content} {
         align-content: $value;
       }
     } 

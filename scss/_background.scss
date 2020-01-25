@@ -16,7 +16,7 @@ $bg-repeats: (repeat, no-repeat, repeat-x, repeat-y);
 
 $bg-sizes: (auto, cover, contain);
 
-.bg {
+.#{$prefix}bg {
   @each $attachment in $bg-attachments {
     &-#{$attachment} {
       background-attachment: $attachment;
@@ -44,7 +44,7 @@ $bg-sizes: (auto, cover, contain);
 
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
-    .#{$bname}\:bg {
+    .#{$prefix}#{$bname}\:bg {
       @each $attachment in $bg-attachments {
         &-#{$attachment} {
           background-attachment: $attachment;

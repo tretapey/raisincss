@@ -11,7 +11,7 @@ $values: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50);
 @each $property in (top, left, bottom, right) {
   @each $bname, $breakpoint in $breakpoints {
     @media (min-width: $breakpoint) {
-      .#{$bname}\:#{$property} {
+      .#{$prefix}#{$bname}\:#{$property} {
         @each $n in $values {
           &-#{$n} {
             #{$property}: #{$n}px;
@@ -38,7 +38,7 @@ $values: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50);
   @each $property in (top, left, bottom, right) {
     @each $bname, $breakpoint in $breakpoints {
       @media (min-width: $breakpoint) {
-        .#{$bname}\:#{$property} {
+        .#{$prefix}#{$bname}\:#{$property} {
           @each $n in $values {
             &-#{$n}-#{$measure} {
               #{$property}: #{$n}#{$measure};

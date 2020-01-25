@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tretapey/raisincss/issues"
   },
-  "homepage": "https://github.com/tretapey/raisincss#readme"
+  "homepage": "https://github.com/tretapey/raisincss#readme",
+  "devDependencies": {
+    "sass": "^1.25.1-test.1"
+  }
 }

@@ -6,7 +6,7 @@
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
     @each $value in (visible, hidden) {
-      .#{$prefix}#{$bname}\:#{$value} {
+      .#{$bname}\:#{$prefix}#{$value} {
         visibility: $value
       }
     }

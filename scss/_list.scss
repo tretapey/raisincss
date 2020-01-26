@@ -19,7 +19,7 @@
 
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
-    .#{$prefix}#{$bname}\:list {
+    .#{$bname}\:#{$prefix}list {
       @each $value in (outside, inside) {
         &-#{$value} {
           list-style-position: $value;

@@ -14,7 +14,7 @@
 }
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
-    .#{$prefix}#{$bname}\:overflow {
+    .#{$bname}\:#{$prefix}overflow {
       @each $value in (auto, hidden, visible, scroll) {
         &-#{$value} {
           overflow: $value;

@@ -25,7 +25,7 @@ $heights-and-values: (
 
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
-    .#{$prefix}#{$bname}\:h {
+    .#{$bname}\:#{$prefix}h {
       @each $height, $value in $heights-and-values {
         &-#{$height} {
           height: $value;

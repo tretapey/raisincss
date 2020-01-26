@@ -8,7 +8,7 @@
 
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
-    .#{$prefix}#{$bname}\:opacity {
+    .#{$bname}\:#{$prefix}opacity {
       @each $n in (0, 25, 50, 75, 100) {
         &-#{$n} {
           opacity: $n/100;

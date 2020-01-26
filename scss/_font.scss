@@ -56,7 +56,7 @@ $fontWeights: (
 
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
-    .#{$prefix}#{$bname}\:font {
+    .#{$bname}\:#{$prefix}font {
       &-italic {
         font-style: italic;
       }

@@ -8,7 +8,7 @@
 
   @each $bname, $breakpoint in $breakpoints {
     @media(min-width: $breakpoint) {
-      .#{$prefix}#{$bname}\:grid {
+      .#{$bname}\:#{$prefix}grid {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
@@ -87,69 +87,69 @@
   @each $bname, $breakpoint in $breakpoints {
     @media(min-width: $breakpoint) {
       @for $n from 1 through 12 {
-        .#{$prefix}#{$bname}\:has-#{$n}-columns {
+        .#{$bname}\:#{$prefix}has-#{$n}-columns {
           grid-template-columns: repeat($n, 1fr);
         }
-        .#{$prefix}#{$bname}\:has-#{$n}-rows {
+        .#{$bname}\:#{$prefix}has-#{$n}-rows {
           grid-template-rows: repeat($n, 1fr);
         }
 
-        .#{$prefix}#{$bname}\:column-gap-#{$n*5} {
+        .#{$bname}\:#{$prefix}column-gap-#{$n*5} {
           grid-column-gap: $n*5px;
         }
-        .#{$prefix}#{$bname}\:row-gap-#{$n*5} {
+        .#{$bname}\:#{$prefix}row-gap-#{$n*5} {
           grid-row-gap: $n*5px;
         }
 
         //grid items
-        .#{$prefix}#{$bname}\:column-start-#{$n} {
+        .#{$bname}\:#{$prefix}column-start-#{$n} {
           grid-column-start: $n;
         }
-        .#{$prefix}#{$bname}\:column-end-#{$n} {
+        .#{$bname}\:#{$prefix}column-end-#{$n} {
           grid-column-end: $n+1;
         }
-        .#{$prefix}#{$bname}\:column-span-#{$n} {
+        .#{$bname}\:#{$prefix}column-span-#{$n} {
           grid-column-end: span $n;
         }
-        .#{$prefix}#{$bname}\:row-start-#{$n} {
+        .#{$bname}\:#{$prefix}row-start-#{$n} {
           grid-row-start: $n;
         }
-        .#{$prefix}#{$bname}\:row-end-#{$n} {
+        .#{$bname}\:#{$prefix}row-end-#{$n} {
           grid-row-end: $n+1;
         }
-        .#{$prefix}#{$bname}\:row-span-#{$n} {
+        .#{$bname}\:#{$prefix}row-span-#{$n} {
           grid-row-end: span $n;
         }
       }
 
       @each $value in (start, end, center, stretch) {
-        .#{$prefix}#{$bname}\:justify-items-#{$value} {
+        .#{$bname}\:#{$prefix}justify-items-#{$value} {
           justify-items: $value;
         }
-        .#{$prefix}#{$bname}\:align-items-#{$value} {
+        .#{$bname}\:#{$prefix}align-items-#{$value} {
           align-items: $value;
         }
 
         //grid items
-        .#{$prefix}#{$bname}\:justify-self-#{$value} {
+        .#{$bname}\:#{$prefix}justify-self-#{$value} {
           justify-self: $value;
         }
-        .#{$prefix}#{$bname}\:align-self-#{$value} {
+        .#{$bname}\:#{$prefix}align-self-#{$value} {
           align-self: $value;
         }
       }
 
       @each $value in (start, end, center, stretch, space-around, space-between, space-evenly) {
-        .#{$prefix}#{$bname}\:justify-content-#{$value} {
+        .#{$bname}\:#{$prefix}justify-content-#{$value} {
           justify-content: $value;
         }
-        .#{$prefix}#{$bname}\:align-content-#{$value} {
+        .#{$bname}\:#{$prefix}align-content-#{$value} {
           align-content: $value
         }
       }
 
       @each $direction in (row, column) {
-        .#{$prefix}#{$bname}\:auto-flow-#{$direction} {
+        .#{$bname}\:#{$prefix}auto-flow-#{$direction} {
           grid-auto-flow: $direction;
         }
       }

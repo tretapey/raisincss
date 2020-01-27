@@ -43,6 +43,8 @@ An Utility CSS only library
 
 Fork this repo and send a pull request with your proposed changes.
 
+To generate the css files run the command `yarn && yarn run build` this will generate the following files; `raisin.css`, `raisin.css.map`, `raisin.min.css`, `raisin.min.css.map`.
+
 ## How to use
 
 Add this to the `<head>` tag:

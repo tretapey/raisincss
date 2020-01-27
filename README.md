@@ -1,6 +1,6 @@
 # RaisinCSS
 
-An Utility CSS only library.
+An Utility CSS only library
 
 - Supports CSS Grid (Check grid section)
 - Supports Flexbox

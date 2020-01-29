@@ -5,4 +5,4 @@ $breakpoints: (
   xl: 1200px
 );
 
-$measures: (vw, px, vh, rem, em, \%);
+$measures: (vw, px, vh, rem, em, \%) !default;

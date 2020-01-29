@@ -1,4 +1,4 @@
-$bg-attachments: (fixed, local, scroll);
+$bg-attachments: (fixed, local, scroll) !default;
 
 $bg-positions-and-values: (
   (center, center)
@@ -12,9 +12,9 @@ $bg-positions-and-values: (
   (left-bottom, left bottom)
 );
 
-$bg-repeats: (repeat, no-repeat, repeat-x, repeat-y);
+$bg-repeats: (repeat, no-repeat, repeat-x, repeat-y) !default;
 
-$bg-sizes: (auto, cover, contain);
+$bg-sizes: (auto, cover, contain) !default;
 
 .bg {
   @each $attachment in $bg-attachments {

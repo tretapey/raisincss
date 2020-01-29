@@ -3,7 +3,7 @@ $breakpoints-and-widths: (
   (768px, 720px)
   (992px, 960px)
   (1200px, 1140px)
-);
+) !default;
 
 .container {
   width:100%;

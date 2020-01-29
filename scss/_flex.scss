@@ -25,7 +25,7 @@ $justifys-and-values: (
   (between, space-between)
   (around, space-around)
   (evenly, space-evenly)
-);
+) !default;
 
 @each $justify, $value in $justifys-and-values {
   .justify-#{$justify} {
@@ -39,7 +39,7 @@ $items-and-values: (
   (center, center)
   (baseline, baseline)
   (stretch, stretch)
-);
+) !default;
 
 @each $item, $value in $items-and-values {
   .items-#{$item} {
@@ -58,7 +58,7 @@ $contents-and-values: (
   (stretch, stretch)
   (between, space-between)
   (around, space-around)
-);
+) !default;
 
 @each $content, $value in $contents-and-values {
   .content-#{$content} {

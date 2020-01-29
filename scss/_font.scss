@@ -8,7 +8,7 @@ $fontSizes: (
   (3xl,1.875rem),
   (4xl,2.25rem),
   (5xl,3rem),
-);
+) !default;
 
 $fontWeights: (
   (thin, 200),
@@ -17,7 +17,7 @@ $fontWeights: (
   (medium, 500),
   (bold, 700),
   (bolder, 800)
-);
+) !default;
     
 .font {
   //browser supported font-family styles

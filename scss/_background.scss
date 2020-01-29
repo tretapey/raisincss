@@ -10,7 +10,7 @@ $bg-positions-and-values: (
   (right-bottom, right bottom)
   (left-top, left top)
   (left-bottom, left bottom)
-);
+) !default;
 
 $bg-repeats: (repeat, no-repeat, repeat-x, repeat-y) !default;
 

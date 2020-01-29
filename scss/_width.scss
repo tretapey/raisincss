@@ -13,7 +13,7 @@ $widths-and-values: (
   (full, 100%)
   (screen, 100vw)
   (auto, auto)
-);
+) !default;
 
 .w {
   @each $width, $value in $widths-and-values {

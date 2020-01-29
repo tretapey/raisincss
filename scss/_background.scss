@@ -16,57 +16,29 @@ $bg-repeats: (repeat, no-repeat, repeat-x, repeat-y);
 
 $bg-sizes: (auto, cover, contain);
 
-.#{$prefix}bg {
-  @each $attachment in $bg-attachments {
-    &-#{$attachment} {
-      background-attachment: $attachment;
-    }
-  }
-
-  @each $repeat in $bg-repeats {
-    &-#{$repeat} {
-      background-repeat: $repeat;
-    }
-  }
-
-  @each $size in $bg-sizes {
-    &-#{$size} {
-      background-size: $size;
-    }
-  }
-
-  @each $position, $value in $bg-positions-and-values {
-    &-#{$position} {
-      background-position: $value;
-    }
-  }
-}
-
-@each $bname, $breakpoint in $breakpoints {
-  @media(min-width: $breakpoint) {
-    .#{$bname}\:#{$prefix}bg {
-      @each $attachment in $bg-attachments {
-        &-#{$attachment} {
-          background-attachment: $attachment;
-        }
+@include with-breakpoints() using ($prefix-with-bname) {
+  .#{$prefix-with-bname}bg {
+    @each $attachment in $bg-attachments {
+      &-#{$attachment} {
+        background-attachment: $attachment;
       }
+    }
 
-      @each $repeat in $bg-repeats {
-        &-#{$repeat} {
-          background-repeat: $repeat;
-        }
+    @each $repeat in $bg-repeats {
+      &-#{$repeat} {
+        background-repeat: $repeat;
       }
+    }
 
-      @each $size in $bg-sizes {
-        &-#{$size} {
-          background-size: $size;
-        }
+    @each $size in $bg-sizes {
+      &-#{$size} {
+        background-size: $size;
       }
+    }
 
-      @each $position, $value in $bg-positions-and-values {
-        &-#{$position} {
-          background-position: $value;
-        }
+    @each $position, $value in $bg-positions-and-values {
+      &-#{$position} {
+        background-position: $value;
       }
     }
   }

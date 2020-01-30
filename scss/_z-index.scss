@@ -1,19 +1,19 @@
 @for $n from 0 through 5 {
-  .z-#{$n*10} {
+  .#{$prefix}z-#{$n*10} {
     z-index: $n*10;
   }
 }
-.z-auto {
+.#{$prefix}z-auto {
   z-index: auto;
 }
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
     @for $n from 0 through 5 {
-      .#{$bname}\:z-#{$n*10} {
+      .#{$bname}\:#{$prefix}z-#{$n*10} {
         z-index: $n*10;
       }
     }
-    .#{$bname}\:z-auto {
+    .#{$bname}\:#{$prefix}z-auto {
       z-index: auto;
     }
   }

@@ -1,4 +1,4 @@
-.display {
+.#{$prefix}display {
   @each $value in (block, inline-block, inline, table, table-row, table-cell, none) {
     &-#{$value} {
       display: $value;
@@ -7,7 +7,7 @@
 }
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
-    .#{$bname}\:display {
+    .#{$bname}\:#{$prefix}display {
       @each $value in (block, inline-block, inline, table, table-row, table-cell, none) {
         &-#{$value} {
           display: $value;

@@ -7,7 +7,7 @@ $radius-and-values: (
   (pill, 50rem)
 );
 
-.border {
+.#{$prefix}border {
   border: 1px solid;
 
   @each $value in (top, right, bottom, left) {
@@ -41,7 +41,7 @@ $radius-and-values: (
 
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
-    .#{$bname}\:border {
+    .#{$bname}\:#{$prefix}border {
       border: 1px solid;
 
       @each $value in (top, right, bottom, left) {

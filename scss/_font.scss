@@ -30,53 +30,30 @@ $fontWeights: (
   &-mono {
     font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
-
-  &-italic {
-    font-style: italic;
-  }
-  &-roman {
-    font-style: normal;
-  }
-  &-antialiased {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  @each $name, $size in $fontSizes {
-    &-#{$name} {
-      font-size: $size;
-    }
-  }
-  @each $name, $weight in $fontWeights {
-    &-#{$name} {
-      font-weight: $weight;
-    }
-  }
 }
 
-@each $bname, $breakpoint in $breakpoints {
-  @media(min-width: $breakpoint) {
-    .#{$bname}\:#{$prefix}font {
-      &-italic {
-        font-style: italic;
-      }
-      &-roman {
-        font-style: normal;
-      }
-      &-antialiased {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
 
-      @each $name, $size in $fontSizes {
-        &-#{$name} {
-          font-size: $size;
-        }
+@include with-breakpoints() using ($prefix-with-bname) {
+  .#{$prefix-with-bname}font{
+    &-italic {
+      font-style: italic;
+    }
+    &-roman {
+      font-style: normal;
+    }
+    &-antialiased {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    @each $name, $size in $fontSizes {
+      &-#{$name} {
+        font-size: $size;
       }
-      @each $name, $weight in $fontWeights {
-        &-#{$name} {
-          font-weight: $weight;
-        }
+    }
+    @each $name, $weight in $fontWeights {
+      &-#{$name} {
+        font-weight: $weight;
       }
     }
   }

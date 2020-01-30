@@ -8,7 +8,7 @@ $justifys-and-values: (
 );
 
 $items-and-values: (
-  (start, flex-start)
+  (start, flex-start) 
   (end, flex-end)
   (center, center)
   (baseline, baseline)
@@ -24,92 +24,47 @@ $contents-and-values: (
   (around, space-around)
 );
 
-.#{$prefix}flex {
-  display:flex;
+@include with-breakpoints() using ($prefix-with-bname) {
+  .#{$prefix-with-bname}flex {
+    display:flex;
 
-  @each $direction in (row, column) {
-    &-#{$direction} {
-      flex-direction: $direction;
+    @each $direction in (row, column) {
+      &-#{$direction} {
+        flex-direction: $direction;
 
-      &-reverse {
-        flex-direction: $direction + -reverse;
-      }
-    }
-  }
-
-  @each $value in (wrap, wrap-reverse, nowrap) {
-    &-#{$value} {
-      flex-wrap: $value;
-    }
-  }
-}
-
-@each $justify, $value in $justifys-and-values {
-  .#{$prefix}justify-#{$justify} {
-    justify-content: $value;
-  }
-} 
-
-
-@each $item, $value in $items-and-values {
-  .#{$prefix}items-#{$item} {
-    align-items: $value;
-  }
-
-  .#{$prefix}self-#{$item} {
-    align-self: $value;
-  }
-}
-
-@each $content, $value in $contents-and-values {
-  .#{$prefix}content-#{$content} {
-    align-content: $value;
-  }
-} 
-
-@each $bname, $breakpoint in $breakpoints {
-  @media(min-width: $breakpoint) {
-
-    .#{$bname}\:#{$prefix}flex {
-      display:flex;
-
-      @each $direction in (row, column) {
-        &-#{$direction} {
-          flex-direction: $direction;
-
-          &-reverse {
-            flex-direction: $direction + -reverse;
-          }
-        }
-      }
-
-      @each $value in (wrap, wrap-reverse, nowrap) {
-        &-#{$value} {
-          flex-wrap: $value;
+        &-reverse {
+          flex-direction: $direction + -reverse;
         }
       }
     }
 
-    @each $justify, $value in $justifys-and-values {
-      .#{$bname}\:#{$prefix}justify-#{$justify} {
-        justify-content: $value;
-      }
-    } 
-
-    @each $item, $value in $items-and-values {
-      .#{$bname}\:#{$prefix}items-#{$item} {
-        align-items: $value;
-      }
-
-      .#{$bname}\:#{$prefix}self-#{$item} {
-        align-self: $value;
+    @each $value in (wrap, wrap-reverse, nowrap) {
+      &-#{$value} {
+        flex-wrap: $value;
       }
     }
-
-    @each $content, $value in $contents-and-values {
-      .#{$bname}\:#{$prefix}content-#{$content} {
-        align-content: $value;
-      }
-    } 
   }
+
+  @each $justify, $value in $justifys-and-values {
+    .#{$prefix-with-bname}justify-#{$justify} {
+      justify-content: $value;
+    }
+  } 
+
+
+  @each $item, $value in $items-and-values {
+    .#{$prefix-with-bname}items-#{$item} {
+      align-items: $value;
+    }
+
+    .#{$prefix-with-bname}self-#{$item} {
+      align-self: $value;
+    }
+  }
+
+  @each $content, $value in $contents-and-values {
+    .#{$prefix-with-bname}content-#{$content} {
+      align-content: $value;
+    }
+  } 
 }

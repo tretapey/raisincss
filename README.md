@@ -50,7 +50,7 @@ To generate the css files run the command `npm install && npm run build` this wi
 Add this to the `<head>` tag:
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0.3/raisin.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0.4/raisin.min.css" rel="stylesheet"/>
 ```
 
 or import it in your css:

@@ -1,3 +1,29 @@
+$justifys-and-values: (
+  (start, flex-start) 
+  (end, flex-end)
+  (center, center)
+  (between, space-between)
+  (around, space-around)
+  (evenly, space-evenly)
+);
+
+$items-and-values: (
+  (start, flex-start)
+  (end, flex-end)
+  (center, center)
+  (baseline, baseline)
+  (stretch, stretch)
+);
+
+$contents-and-values: (
+  (start, flex-start) 
+  (end, flex-end)
+  (center, center)
+  (stretch, stretch)
+  (between, space-between)
+  (around, space-around)
+);
+
 .#{$prefix}flex {
   display:flex;
 
@@ -18,28 +44,12 @@
   }
 }
 
-$justifys-and-values: (
-  (start, flex-start) 
-  (end, flex-end)
-  (center, center)
-  (between, space-between)
-  (around, space-around)
-  (evenly, space-evenly)
-);
-
 @each $justify, $value in $justifys-and-values {
   .#{$prefix}justify-#{$justify} {
     justify-content: $value;
   }
 } 
 
-$items-and-values: (
-  (start, flex-start)
-  (end, flex-end)
-  (center, center)
-  (baseline, baseline)
-  (stretch, stretch)
-);
 
 @each $item, $value in $items-and-values {
   .#{$prefix}items-#{$item} {
@@ -50,15 +60,6 @@ $items-and-values: (
     align-self: $value;
   }
 }
-
-$contents-and-values: (
-  (start, flex-start) 
-  (end, flex-end)
-  (center, center)
-  (stretch, stretch)
-  (between, space-between)
-  (around, space-around)
-);
 
 @each $content, $value in $contents-and-values {
   .#{$prefix}content-#{$content} {

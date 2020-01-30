@@ -6,3 +6,6 @@ $breakpoints: (
 ) !default;
 
 $measures: (vw, px, vh, rem, em, \%) !default;
+
+// "raisincss-" will make e.g. .flex class look like .raisincss-flex
+$prefix: "" !default;

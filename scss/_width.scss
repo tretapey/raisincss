@@ -15,7 +15,7 @@ $widths-and-values: (
   (auto, auto)
 ) !default;
 
-.w {
+.#{$prefix}w {
   @each $width, $value in $widths-and-values {
     &-#{$width} {
       width: $value;
@@ -25,7 +25,7 @@ $widths-and-values: (
 
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
-    .#{$bname}\:w {
+    .#{$bname}\:#{$prefix}w {
       @each $width, $value in $widths-and-values {
         &-#{$width} {
           width: $value;

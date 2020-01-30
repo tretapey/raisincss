@@ -19,7 +19,7 @@ $fontWeights: (
   (bolder, 800)
 ) !default;
     
-.font {
+.#{$prefix}font {
   //browser supported font-family styles
   &-sans {
     font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -56,7 +56,7 @@ $fontWeights: (
 
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
-    .#{$bname}\:font {
+    .#{$bname}\:#{$prefix}font {
       &-italic {
         font-style: italic;
       }

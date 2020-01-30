@@ -5,7 +5,7 @@ $ratios-and-values: (
   (1by1, 100%)
 ) !default;
 
-.ratio {
+.#{$prefix}ratio {
   @each $ratio, $value in $ratios-and-values {
     &-#{$ratio}::before {
       display: block;

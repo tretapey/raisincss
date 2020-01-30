@@ -1,4 +1,4 @@
-.text {
+.#{$prefix}text {
   @each $value in (center, left, right, justify) { 
     &-#{$value} {
       text-align: $value;
@@ -20,7 +20,7 @@
 
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
-    .#{$bname}\:text {
+    .#{$bname}\:#{$prefix}text {
       @each $value in (center, left, right, justify) { 
         &-#{$value} {
           text-align: $value;

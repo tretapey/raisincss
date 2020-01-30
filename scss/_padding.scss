@@ -5,7 +5,7 @@ $paddings-and-letters: (
   (left,l)
 ) !default;
 
-.p {
+.#{$prefix}p {
   @for $n from 0 through 12 {
     &-#{$n} {
       padding: $n * 0.25rem;
@@ -38,7 +38,7 @@ $paddings-and-letters: (
 
 @each $bname, $breakpoint in $breakpoints {
   @media(min-width: $breakpoint) {
-    .#{$bname}\:p {
+    .#{$bname}\:#{$prefix}p {
       @for $n from 0 through 12 {
         &-#{$n} {
           padding: $n * 0.25rem;

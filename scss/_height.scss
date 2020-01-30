@@ -13,7 +13,7 @@ $heights-and-values: (
   (full, 100%)
   (screen, 100vh)
   (auto, auto)
-);
+) !default;
 
 .#{$prefix}h {
   @each $height, $value in $heights-and-values {

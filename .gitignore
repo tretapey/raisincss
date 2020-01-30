@@ -3,3 +3,5 @@ index.html
 /node_modules
 
 .DS_Store
+# use yarn import
+/yarn.lock

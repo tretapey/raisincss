@@ -3,7 +3,7 @@ $paddings-and-letters: (
   (right,r)
   (bottom,b)
   (left,l)
-);
+) !default;
 
 .#{$prefix}p {
   @for $n from 0 through 12 {

@@ -3,7 +3,7 @@ $ratios-and-values: (
   (16by9, 56.25%)
   (4by3, 75%)
   (1by1, 100%)
-);
+) !default;
 
 .#{$prefix}ratio {
   @each $ratio, $value in $ratios-and-values {

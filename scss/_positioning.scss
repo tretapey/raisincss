@@ -1,4 +1,4 @@
-$values: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50);
+$values: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50) !default;
 
 @each $property in (top, left, bottom, right) {
   @each $n in $values {

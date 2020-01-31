@@ -15,21 +15,12 @@ $heights-and-values: (
   (auto, auto)
 );
 
-.#{$prefix}h {
-  @each $height, $value in $heights-and-values {
-    &-#{$height} {
-      height: $value;
-    }
-  }
-}
 
-@each $bname, $breakpoint in $breakpoints {
-  @media(min-width: $breakpoint) {
-    .#{$bname}\:#{$prefix}h {
-      @each $height, $value in $heights-and-values {
-        &-#{$height} {
-          height: $value;
-        }
+@include with-breakpoints() using ($prefix-with-bname) {
+  .#{$prefix-with-bname}h {
+    @each $height, $value in $heights-and-values {
+      &-#{$height} {
+        height: $value;
       }
     }
   }

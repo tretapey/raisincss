@@ -15,21 +15,11 @@ $widths-and-values: (
   (auto, auto)
 );
 
-.#{$prefix}w {
-  @each $width, $value in $widths-and-values {
-    &-#{$width} {
-      width: $value;
-    }
-  }
-}
-
-@each $bname, $breakpoint in $breakpoints {
-  @media(min-width: $breakpoint) {
-    .#{$bname}\:#{$prefix}w {
-      @each $width, $value in $widths-and-values {
-        &-#{$width} {
-          width: $value;
-        }
+@include with-breakpoints() using ($prefix-with-bname) {
+  .#{$prefix-with-bname}w {
+    @each $width, $value in $widths-and-values {
+      &-#{$width} {
+        width: $value;
       }
     }
   }

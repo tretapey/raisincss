@@ -52,7 +52,7 @@ To generate the css files run the command `yarn && yarn run build` this will gen
 Add this to the `<head>` tag:
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0.4/raisin.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0.5/raisin.min.css" rel="stylesheet"/>
 ```
 
 or import it in your css:

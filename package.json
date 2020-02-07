@@ -1,6 +1,6 @@
 {
   "name": "raisincss",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An Utility CSS only library. It supports css grid and many more useful css properties.",
   "main": "raisin.min.css",
   "scripts": {

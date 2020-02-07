@@ -1,157 +1,77 @@
 // ensure that the browser supports it
 @supports(grid-area:auto) {
-  .#{$prefix}grid {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-  }
+  @include with-breakpoints() using ($prefix-with-bname) {
+    .#{$prefix-with-bname}grid {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
 
-  @each $bname, $breakpoint in $breakpoints {
-    @media(min-width: $breakpoint) {
-      .#{$bname}\:#{$prefix}grid {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
+    @for $n from 1 through 12 {
+      .#{$prefix-with-bname}has-#{$n}-columns {
+        grid-template-columns: repeat($n, 1fr);
       }
-    }
-  }
-
-  @for $n from 1 through 12 {
-    .#{$prefix}has-#{$n}-columns {
-      grid-template-columns: repeat($n, 1fr);
-    }
-    .#{$prefix}has-#{$n}-rows {
-      grid-template-rows: repeat($n, 1fr);
-    }
-
-    .#{$prefix}column-gap-#{$n*5} {
-      grid-column-gap: $n*5px;
-    }
-    .#{$prefix}row-gap-#{$n*5} {
-      grid-row-gap: $n*5px;
-    }
-
-    //grid items
-    .#{$prefix}column-start-#{$n} {
-      grid-column-start: $n;
-    }
-    .#{$prefix}column-end-#{$n} {
-      grid-column-end: $n+1;
-    }
-    .#{$prefix}column-span-#{$n} {
-      grid-column-end: span $n;
-    }
-    .#{$prefix}row-start-#{$n} {
-      grid-row-start: $n;
-    }
-    .#{$prefix}row-end-#{$n} {
-      grid-row-end: $n+1;
-    }
-    .#{$prefix}row-span-#{$n} {
-      grid-row-end: span $n;
-    }
-  }
-
-  @each $value in (start, end, center, stretch) {
-    .#{$prefix}justify-items-#{$value} {
-      justify-items: $value;
-    }
-    .#{$prefix}align-items-#{$value} {
-      align-items: $value;
-    }
-
-    //grid items
-    .#{$prefix}justify-self-#{$value} {
-      justify-self: $value;
-    }
-    .#{$prefix}align-self-#{$value} {
-      align-self: $value;
-    }
-  }
-
-  @each $value in (start, end, center, stretch, space-around, space-between, space-evenly) {
-    .#{$prefix}justify-content-#{$value} {
-      justify-content: $value;
-    }
-    .#{$prefix}align-content-#{$value} {
-      align-content: $value
-    }
-  }
-
-  @each $direction in (row, column) {
-    .#{$prefix}auto-flow-#{$direction} {
-      grid-auto-flow: $direction;
-    }
-  }
-
-  @each $bname, $breakpoint in $breakpoints {
-    @media(min-width: $breakpoint) {
-      @for $n from 1 through 12 {
-        .#{$bname}\:#{$prefix}has-#{$n}-columns {
-          grid-template-columns: repeat($n, 1fr);
-        }
-        .#{$bname}\:#{$prefix}has-#{$n}-rows {
-          grid-template-rows: repeat($n, 1fr);
-        }
-
-        .#{$bname}\:#{$prefix}column-gap-#{$n*5} {
-          grid-column-gap: $n*5px;
-        }
-        .#{$bname}\:#{$prefix}row-gap-#{$n*5} {
-          grid-row-gap: $n*5px;
-        }
-
-        //grid items
-        .#{$bname}\:#{$prefix}column-start-#{$n} {
-          grid-column-start: $n;
-        }
-        .#{$bname}\:#{$prefix}column-end-#{$n} {
-          grid-column-end: $n+1;
-        }
-        .#{$bname}\:#{$prefix}column-span-#{$n} {
-          grid-column-end: span $n;
-        }
-        .#{$bname}\:#{$prefix}row-start-#{$n} {
-          grid-row-start: $n;
-        }
-        .#{$bname}\:#{$prefix}row-end-#{$n} {
-          grid-row-end: $n+1;
-        }
-        .#{$bname}\:#{$prefix}row-span-#{$n} {
-          grid-row-end: span $n;
-        }
+      .#{$prefix-with-bname}has-#{$n}-rows {
+        grid-template-rows: repeat($n, 1fr);
       }
 
-      @each $value in (start, end, center, stretch) {
-        .#{$bname}\:#{$prefix}justify-items-#{$value} {
-          justify-items: $value;
-        }
-        .#{$bname}\:#{$prefix}align-items-#{$value} {
-          align-items: $value;
-        }
-
-        //grid items
-        .#{$bname}\:#{$prefix}justify-self-#{$value} {
-          justify-self: $value;
-        }
-        .#{$bname}\:#{$prefix}align-self-#{$value} {
-          align-self: $value;
-        }
+      .#{$prefix-with-bname}column-gap-#{$n*5} {
+        grid-column-gap: $n*5px;
+      }
+      .#{$prefix-with-bname}row-gap-#{$n*5} {
+        grid-row-gap: $n*5px;
       }
 
-      @each $value in (start, end, center, stretch, space-around, space-between, space-evenly) {
-        .#{$bname}\:#{$prefix}justify-content-#{$value} {
-          justify-content: $value;
-        }
-        .#{$bname}\:#{$prefix}align-content-#{$value} {
-          align-content: $value
-        }
+      //grid items
+      .#{$prefix-with-bname}column-start-#{$n} {
+        grid-column-start: $n;
+      }
+      .#{$prefix-with-bname}column-end-#{$n} {
+        grid-column-end: $n+1;
+      }
+      .#{$prefix-with-bname}column-span-#{$n} {
+        grid-column-end: span $n;
+      }
+      .#{$prefix-with-bname}row-start-#{$n} {
+        grid-row-start: $n;
+      }
+      .#{$prefix-with-bname}row-end-#{$n} {
+        grid-row-end: $n+1;
+      }
+      .#{$prefix-with-bname}row-span-#{$n} {
+        grid-row-end: span $n;
+      }
+    }
+
+    @each $value in (start, end, center, stretch) {
+      .#{$prefix-with-bname}justify-items-#{$value} {
+        justify-items: $value;
+      }
+      .#{$prefix-with-bname}align-items-#{$value} {
+        align-items: $value;
       }
 
-      @each $direction in (row, column) {
-        .#{$bname}\:#{$prefix}auto-flow-#{$direction} {
-          grid-auto-flow: $direction;
-        }
+      //grid items
+      .#{$prefix-with-bname}justify-self-#{$value} {
+        justify-self: $value;
+      }
+      .#{$prefix-with-bname}align-self-#{$value} {
+        align-self: $value;
+      }
+    }
+
+    @each $value in (start, end, center, stretch, space-around, space-between, space-evenly) {
+      .#{$prefix-with-bname}justify-content-#{$value} {
+        justify-content: $value;
+      }
+      .#{$prefix-with-bname}align-content-#{$value} {
+        align-content: $value
+      }
+    }
+
+    @each $direction in (row, column) {
+      .#{$prefix-with-bname}auto-flow-#{$direction} {
+        grid-auto-flow: $direction;
       }
     }
   }

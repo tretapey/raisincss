@@ -1,28 +1,15 @@
-.#{$prefix}float {
-  @each $value in (right, left, none) {
-    &-#{$value} {
-      float: $value;
-    }
-  }
-}
-.#{$prefix}clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@each $bname, $breakpoint in $breakpoints {
-  @media(min-width: $breakpoint) {
-    .#{$bname}\:#{$prefix}float {
-      @each $value in (right, left, none) {
-        &-#{$value} {
-          float: $value;
-        }
+@include with-breakpoints() using ($prefix-with-bname) {
+  .#{$prefix-with-bname}float {
+    @each $value in (right, left, none) {
+      &-#{$value} {
+        float: $value;
       }
     }
-    .#{$bname}\:#{$prefix}clearfix:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
+  }
+
+  .#{$prefix-with-bname}clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }

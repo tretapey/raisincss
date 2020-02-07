@@ -7,15 +7,24 @@ $radius-and-values: (
   (pill, 50rem)
 ) !default;
 
-.#{$prefix}border {
-  border: 1px solid;
 
-  @each $value in (top, right, bottom, left) {
-    &-#{$value} {
-      border-#{$value}: 1px solid;
+@include with-breakpoints() using ($prefix-with-bname) {
+  .#{$prefix-with-bname}border {
+    border: 1px solid;
+
+    @each $value in (top, right, bottom, left) {
+      &-#{$value} {
+        border-#{$value}: 1px solid;
+      }
+    }
+
+    &-none {
+      border: none;
     }
   }
+}
 
+.#{$prefix}border {
   @each $value in (solid, dotted, dashed) {
     &-#{$value} {
       border-style: $value
@@ -31,28 +40,6 @@ $radius-and-values: (
   @each $radium, $value in $radius-and-values {
     &-radius-#{$radium} {
       border-radius: $value;
-    }
-  }
-
-  &-none {
-    border: none;
-  }
-}
-
-@each $bname, $breakpoint in $breakpoints {
-  @media(min-width: $breakpoint) {
-    .#{$bname}\:#{$prefix}border {
-      border: 1px solid;
-
-      @each $value in (top, right, bottom, left) {
-        &-#{$value} {
-          border-#{$value}: 1px solid;
-        }
-      }
-
-      &-none {
-        border: none;
-      }
     }
   }
 }

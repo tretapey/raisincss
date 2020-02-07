@@ -5,7 +5,14 @@ $breakpoints: (
   xl: 1200px
 ) !default;
 
-$measures: (vw, px, vh, rem, em, \%) !default;
+$measures: (
+  vw: vw, 
+  px: px, 
+  vh: vh, 
+  rem: rem, 
+  em: em, 
+  \%: "%"
+) !default;
 
 // "raisincss-" will make e.g. .flex class look like .raisincss-flex
 $prefix: "" !default;

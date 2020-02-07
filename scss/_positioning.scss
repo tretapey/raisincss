@@ -8,9 +8,9 @@ $values: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50) !default;
           #{$property}: #{$n}px;
         }
 
-        @each $measure in $measures {
+        @each $measure, $unit in $measures {
           &-#{$n}-#{$measure} {
-            #{$property}: #{$n}#{$measure};
+            #{$property}: #{$n}#{$unit};
           }
         }
       }

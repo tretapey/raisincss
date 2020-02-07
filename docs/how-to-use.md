@@ -38,7 +38,7 @@ If you want to customize for your own use feel free to fork or download this rep
 
 If you need to change any of the variables please add changed variables above the import.
 
-Or import each file apon requirements.
+Or import each file upon requirements.
 
 ```scss
 @import 'scss/setup';

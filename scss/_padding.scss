@@ -5,66 +5,33 @@ $paddings-and-letters: (
   (left,l)
 ) !default;
 
-.#{$prefix}p {
-  @for $n from 0 through 12 {
-    &-#{$n} {
-      padding: $n * 0.25rem;
-    } 
-
-    @each $padding, $letter  in $paddings-and-letters  {
-      &#{$letter}-#{$n} {
-        padding-#{$padding}: $n * 0.25rem;
-      }
-    }
-  }
-
-  &x {
+@include with-breakpoints() using ($prefix-with-bname) {
+  .#{$prefix-with-bname}p {
     @for $n from 0 through 12 {
       &-#{$n} {
-        padding-left: $n * 0.25rem;
-        padding-right: $n * 0.25rem;
-      }
-    }
-  }
-  &y {
-    @for $n from 0 through 12 {
-      &-#{$n} {
-        padding-top: $n * 0.25rem;
-        padding-bottom: $n * 0.25rem;
-      }
-    }
-  }
-}
+        padding: $n * 0.25rem;
+      } 
 
-@each $bname, $breakpoint in $breakpoints {
-  @media(min-width: $breakpoint) {
-    .#{$bname}\:#{$prefix}p {
+      @each $padding, $letter  in $paddings-and-letters  {
+        &#{$letter}-#{$n} {
+          padding-#{$padding}: $n * 0.25rem;
+        }
+      }
+    }
+
+    &x {
       @for $n from 0 through 12 {
         &-#{$n} {
-          padding: $n * 0.25rem;
-        } 
-
-        @each $padding, $letter  in $paddings-and-letters  {
-          &#{$letter}-#{$n} {
-            padding-#{$padding}: $n * 0.25rem;
-          }
+          padding-left: $n * 0.25rem;
+          padding-right: $n * 0.25rem;
         }
       }
-
-      &x {
-        @for $n from 0 through 12 {
-          &-#{$n} {
-            padding-left: $n * 0.25rem;
-            padding-right: $n * 0.25rem;
-          }
-        }
-      }
-      &y {
-        @for $n from 0 through 12 {
-          &-#{$n} {
-            padding-top: $n * 0.25rem;
-            padding-bottom: $n * 0.25rem;
-          }
+    }
+    &y {
+      @for $n from 0 through 12 {
+        &-#{$n} {
+          padding-top: $n * 0.25rem;
+          padding-bottom: $n * 0.25rem;
         }
       }
     }

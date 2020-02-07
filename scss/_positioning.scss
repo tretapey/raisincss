@@ -1,48 +1,16 @@
 $values: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50) !default;
 
-@each $property in (top, left, bottom, right) {
-  @each $n in $values {
-    .#{$property}-#{$n} {
-      #{$property}: #{$n}px;
-    }
-  }
-}
-
-@each $property in (top, left, bottom, right) {
-  @each $bname, $breakpoint in $breakpoints {
-    @media (min-width: $breakpoint) {
-      .#{$bname}\:#{$prefix}#{$property} {
-        @each $n in $values {
-          &-#{$n} {
-            #{$property}: #{$n}px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@each $measure in $measures {
+@include with-breakpoints() using ($prefix-with-bname) {
   @each $property in (top, left, bottom, right) {
-    .#{$property} {
-      @each $n in $values {
-        &-#{$n}-#{$measure} {
-          #{$property}: #{$n}#{$measure};
+    @each $n in $values {
+      .#{$prefix-with-bname}#{$property} {
+        &-#{$n} {
+          #{$property}: #{$n}px;
         }
-      }
-    }
-  }
-}
 
-@each $measure in $measures {
-  @each $property in (top, left, bottom, right) {
-    @each $bname, $breakpoint in $breakpoints {
-      @media (min-width: $breakpoint) {
-        .#{$bname}\:#{$prefix}#{$property} {
-          @each $n in $values {
-            &-#{$n}-#{$measure} {
-              #{$property}: #{$n}#{$measure};
-            }
+        @each $measure in $measures {
+          &-#{$n}-#{$measure} {
+            #{$property}: #{$n}#{$measure};
           }
         }
       }

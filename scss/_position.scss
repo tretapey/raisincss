@@ -1,14 +1,7 @@
-@each $position in (static, fixed, absolute, relative, sticky) {
-  .#{$position} {
-    position: $position;
-  }
-}
-@each $bname, $breakpoint in $breakpoints {
-  @media(min-width: $breakpoint) {
-    @each $position in (static, fixed, absolute, relative, sticky) {
-      .#{$bname}\:#{$prefix}#{$position} {
-        position: $position;
-      }
+@include with-breakpoints() using ($prefix-with-bname) {
+  @each $position in (static, fixed, absolute, relative, sticky) {
+    .#{prefix-with-bname}#{$position} {
+      position: $position;
     }
   }
 }

@@ -6,22 +6,11 @@ $shadows-and-values: (
   (5, (0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22)))
 ) !default;
 
-
-.#{$prefix}shadow {
-  @each $shadow, $value in $shadows-and-values {
-    &-#{$shadow} {
-      box-shadow: $value;
-    }
-  }
-}
-
-@each $bname, $breakpoint in $breakpoints {
-  @media(min-width: $breakpoint) {
-    .#{$bname}\:#{$prefix}shadow {
-      @each $shadow, $value in $shadows-and-values {
-        &-#{$shadow} {
-          box-shadow: $value;
-        }
+@include with-breakpoints() using ($prefix-with-bname) {
+  .#{$prefix-with-bname}shadow {
+    @each $shadow, $value in $shadows-and-values {
+      &-#{$shadow} {
+        box-shadow: $value;
       }
     }
   }

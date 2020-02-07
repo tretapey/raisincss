@@ -1,0 +1,11 @@
+@mixin with-breakpoints() {
+  $prefix-with-bname: $prefix;
+  @content($prefix-with-bname);
+  
+  @each $bname, $breakpoint in $breakpoints {
+    $prefix-with-bname: "#{$bname}\\\:#{$prefix}";
+    @media(min-width: $breakpoint) {
+      @content($prefix-with-bname);
+    }
+  }
+}

@@ -5,87 +5,44 @@ $margins-and-letters: (
   (left,l)
 );
 
-.#{$prefix}m {
-  @for $n from 0 through 12 {
-    &-#{$n} {
-      margin: $n * 0.25rem;
-    } 
-
-    @each $margin, $letter  in $margins-and-letters  {
-      &#{$letter}-#{$n} {
-        margin-#{$margin}: $n * 0.25rem;
-      }
-    }
-  }
-
-  &x {
+@include with-breakpoints() using ($prefix-with-bname) {
+  .#{$prefix-with-bname}m {
     @for $n from 0 through 12 {
       &-#{$n} {
-        margin-left: $n * 0.25rem;
-        margin-right: $n * 0.25rem;
+        margin: $n * 0.25rem;
+      } 
+
+      @each $margin, $letter  in $margins-and-letters  {
+        &#{$letter}-#{$n} {
+          margin-#{$margin}: $n * 0.25rem;
+        }
       }
     }
 
-    &-auto {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  &y {
-    @for $n from 0 through 12 {
-      &-#{$n} {
-        margin-top: $n * 0.25rem;
-        margin-bottom: $n * 0.25rem;
-      }
-    }
-
-    &-auto {
-      margin-top: auto;
-      margin-bottom: auto;
-    }
-  }
-}
-
-@each $bname, $breakpoint in $breakpoints {
-  @media(min-width: $breakpoint) {
-    .#{$bname}\:#{$prefix}m {
+    &x {
       @for $n from 0 through 12 {
         &-#{$n} {
-          margin: $n * 0.25rem;
-        } 
-
-        @each $margin, $letter  in $margins-and-letters  {
-          &#{$letter}-#{$n} {
-            margin-#{$margin}: $n * 0.25rem;
-          }
+          margin-left: $n * 0.25rem;
+          margin-right: $n * 0.25rem;
         }
       }
 
-      &x {
-        @for $n from 0 through 12 {
-          &-#{$n} {
-            margin-left: $n * 0.25rem;
-            margin-right: $n * 0.25rem;
-          }
-        }
-
-        &-auto {
-          margin-left: auto;
-          margin-right: auto;
+      &-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &y {
+      @for $n from 0 through 12 {
+        &-#{$n} {
+          margin-top: $n * 0.25rem;
+          margin-bottom: $n * 0.25rem;
         }
       }
-      &y {
-        @for $n from 0 through 12 {
-          &-#{$n} {
-            margin-top: $n * 0.25rem;
-            margin-bottom: $n * 0.25rem;
-          }
-        }
 
-        &-auto {
-          margin-top: auto;
-          margin-bottom: auto;
-        }
+      &-auto {
+        margin-top: auto;
+        margin-bottom: auto;
       }
     }
   }

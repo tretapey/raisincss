@@ -1,14 +1,7 @@
-@each $value in (visible, hidden) {
-  .#{$prefix}#{$value} {
-    visibility: $value
-  }
-}
-@each $bname, $breakpoint in $breakpoints {
-  @media(min-width: $breakpoint) {
-    @each $value in (visible, hidden) {
-      .#{$bname}\:#{$prefix}#{$value} {
-        visibility: $value
-      }
+@include with-breakpoints() using ($prefix-with-bname) {
+  @each $value in (visible, hidden) {
+    .#{$prefix-with-bname}#{$value} {
+      visibility: $value
     }
   }
 }

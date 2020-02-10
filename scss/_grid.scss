@@ -6,7 +6,9 @@
       grid-template-columns: auto;
       grid-template-rows: auto;
     }
+  }
 
+  @include with-breakpoints() using ($prefix-with-bname) {
     @for $n from 1 through 12 {
       .#{$prefix-with-bname}has-#{$n}-columns {
         grid-template-columns: repeat($n, 1fr);

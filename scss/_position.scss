@@ -1,6 +1,6 @@
 @include with-breakpoints() using ($prefix-with-bname) {
   @each $position in (static, fixed, absolute, relative, sticky) {
-    .#{prefix-with-bname}#{$position} {
+    .#{$prefix-with-bname}#{$position} {
       position: $position;
     }
   }

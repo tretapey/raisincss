@@ -798,107 +798,107 @@ table {
     overflow-y: scroll;
   }
 }
-.prefix-with-bnamestatic {
+.static {
   position: static;
 }
 
-.prefix-with-bnamefixed {
+.fixed {
   position: fixed;
 }
 
-.prefix-with-bnameabsolute {
+.absolute {
   position: absolute;
 }
 
-.prefix-with-bnamerelative {
+.relative {
   position: relative;
 }
 
-.prefix-with-bnamesticky {
+.sticky {
   position: sticky;
 }
 
 @media (min-width: 576px) {
-  .prefix-with-bnamestatic {
+  .sm\:static {
     position: static;
   }
 
-  .prefix-with-bnamefixed {
+  .sm\:fixed {
     position: fixed;
   }
 
-  .prefix-with-bnameabsolute {
+  .sm\:absolute {
     position: absolute;
   }
 
-  .prefix-with-bnamerelative {
+  .sm\:relative {
     position: relative;
   }
 
-  .prefix-with-bnamesticky {
+  .sm\:sticky {
     position: sticky;
   }
 }
 @media (min-width: 768px) {
-  .prefix-with-bnamestatic {
+  .md\:static {
     position: static;
   }
 
-  .prefix-with-bnamefixed {
+  .md\:fixed {
     position: fixed;
   }
 
-  .prefix-with-bnameabsolute {
+  .md\:absolute {
     position: absolute;
   }
 
-  .prefix-with-bnamerelative {
+  .md\:relative {
     position: relative;
   }
 
-  .prefix-with-bnamesticky {
+  .md\:sticky {
     position: sticky;
   }
 }
 @media (min-width: 992px) {
-  .prefix-with-bnamestatic {
+  .lg\:static {
     position: static;
   }
 
-  .prefix-with-bnamefixed {
+  .lg\:fixed {
     position: fixed;
   }
 
-  .prefix-with-bnameabsolute {
+  .lg\:absolute {
     position: absolute;
   }
 
-  .prefix-with-bnamerelative {
+  .lg\:relative {
     position: relative;
   }
 
-  .prefix-with-bnamesticky {
+  .lg\:sticky {
     position: sticky;
   }
 }
 @media (min-width: 1200px) {
-  .prefix-with-bnamestatic {
+  .xl\:static {
     position: static;
   }
 
-  .prefix-with-bnamefixed {
+  .xl\:fixed {
     position: fixed;
   }
 
-  .prefix-with-bnameabsolute {
+  .xl\:absolute {
     position: absolute;
   }
 
-  .prefix-with-bnamerelative {
+  .xl\:relative {
     position: relative;
   }
 
-  .prefix-with-bnamesticky {
+  .xl\:sticky {
     position: sticky;
   }
 }

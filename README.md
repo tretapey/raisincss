@@ -18,6 +18,7 @@ An Utility CSS only library.
     - [Display](#display)
     - [Float](#float)
     - [Overflow](#overflow)
+    - [Cursor](#cursor)
     - [Position](#position)
     - [Positioning](#positioning)
     - [Visibility](#visibility)
@@ -52,13 +53,13 @@ To generate the css files run the command `yarn && yarn run build` this will gen
 Add this to the `<head>` tag:
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0.8/raisin.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.1.0/raisin.min.css" rel="stylesheet"/>
 ```
 
 or import it in your css:
 
 ```css 
-@import "https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.0.8/raisin.min.css";
+@import "https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.1.0/raisin.min.css";
 ```
 
 or install it via npm:
@@ -137,6 +138,17 @@ or:
 - `.md:overflow-hidden`
 - `.lg:overflow-x-none`
 - `.xl:overflow-y-scroll`
+
+#### Cursor
+
+- `.cursor-default`
+- `.cursor-grab`
+- `.cursor-pointer`
+- `.cursor-move`
+- `.cursor-not-allowed`
+- `.cursor-progress`
+- `.cursor-help`
+- `.cursor-crosshair`
 
 #### Position
 

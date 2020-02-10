@@ -14357,5 +14357,29 @@ table {
     right: 50%;
   }
 }
+.cursor-default {
+  cursor: default;
+}
+.cursor-grab {
+  cursor: grab;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-move {
+  cursor: move;
+}
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+.cursor-progress {
+  cursor: progress;
+}
+.cursor-help {
+  cursor: help;
+}
+.cursor-crosshair {
+  cursor: crosshair;
+}
 
 /*# sourceMappingURL=raisin.css.map */

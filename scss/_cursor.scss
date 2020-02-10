@@ -1,0 +1,7 @@
+.#{$prefix}cursor {
+  @each $value in (default, grab, pointer, move, not-allowed, progress, help, crosshair) {
+    &-#{$value} {
+      cursor: $value
+    }
+  }
+}

@@ -1,13 +1,23 @@
+$fontSizeXs: .75rem !default;
+$fontSizeSm: .875rem !default;
+$fontSizeBase: 1rem !default;
+$fontSizeLg: 1.125rem !default;
+$fontSizeXl: 1.25rem !default;
+$fontSize2Xl: 1.5rem !default;
+$fontSize3Xl: 1.875rem !default;
+$fontSize4Xl: 2.25rem !default;
+$fontSize5Xl: 3rem !default;
+
 $fontSizes: (
-  (xs, .75rem),
-  (sm, .875rem),
-  (base, 1rem),
-  (lg, 1.125rem),
-  (xl, 1.25rem),
-  (2xl,1.5rem),
-  (3xl,1.875rem),
-  (4xl,2.25rem),
-  (5xl,3rem),
+  (xs, $fontSizeXs),
+  (sm, $fontSizeSm),
+  (base, $fontSizeBase),
+  (lg, $fontSizeLg),
+  (xl, $fontSizeXl),
+  (2xl, $fontSize2Xl),
+  (3xl, $fontSize3Xl),
+  (4xl, $fontSize4Xl),
+  (5xl, $fontSize5Xl),
 ) !default;
 
 $fontWeights: (
@@ -18,17 +28,21 @@ $fontWeights: (
   (bold, 700),
   (bolder, 800)
 ) !default;
-    
+
+$fontSans: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !default;
+$fontSerif: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif !default;
+$fontMono: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !default;
+
 .#{$prefix}font {
   //browser supported font-family styles
   &-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: $fontSans;
   }
   &-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: $fontSerif;
   }
   &-mono {
-    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-family: $fontMono;
   }
 }
 

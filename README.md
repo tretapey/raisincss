@@ -250,6 +250,8 @@ We can also use top, right, bottom and left margins:
 - `.mr-{0 to 12}` -> `margin-right: {0 to 3}rem`
 - `.mb-{0 to 12}` -> `margin-bottom: {0 to 3}rem`
 - `.ml-{0 to 12}` -> `margin-left: {0 to 3}rem`
+- `.ml-auto`
+- `.mr-auto`
 
 Or use the x and y margins:
 

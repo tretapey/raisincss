@@ -59,7 +59,7 @@ Add this to the `<head>` tag:
 or import it in your css:
 
 ```css 
-@import "https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.1.0/raisin.min.css";
+@import "https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.1.1/raisin.min.css";
 ```
 
 or install it via npm:

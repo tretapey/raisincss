@@ -1369,6 +1369,12 @@ table {
 .ml-12 {
   margin-left: 3rem;
 }
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
 .mx-0 {
   margin-left: 0rem;
   margin-right: 0rem;
@@ -1677,6 +1683,12 @@ table {
   }
   .sm\:ml-12 {
     margin-left: 3rem;
+  }
+  .sm\:ml-auto {
+    margin-left: auto;
+  }
+  .sm\:mr-auto {
+    margin-right: auto;
   }
   .sm\:mx-0 {
     margin-left: 0rem;
@@ -1987,6 +1999,12 @@ table {
   .md\:ml-12 {
     margin-left: 3rem;
   }
+  .md\:ml-auto {
+    margin-left: auto;
+  }
+  .md\:mr-auto {
+    margin-right: auto;
+  }
   .md\:mx-0 {
     margin-left: 0rem;
     margin-right: 0rem;
@@ -2296,6 +2314,12 @@ table {
   .lg\:ml-12 {
     margin-left: 3rem;
   }
+  .lg\:ml-auto {
+    margin-left: auto;
+  }
+  .lg\:mr-auto {
+    margin-right: auto;
+  }
   .lg\:mx-0 {
     margin-left: 0rem;
     margin-right: 0rem;
@@ -2604,6 +2628,12 @@ table {
   }
   .xl\:ml-12 {
     margin-left: 3rem;
+  }
+  .xl\:ml-auto {
+    margin-left: auto;
+  }
+  .xl\:mr-auto {
+    margin-right: auto;
   }
   .xl\:mx-0 {
     margin-left: 0rem;

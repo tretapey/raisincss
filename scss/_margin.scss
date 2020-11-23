@@ -19,6 +19,18 @@ $margins-and-letters: (
       }
     }
 
+    &l {
+      &-auto {
+        margin-left: auto;
+      }
+    }
+
+    &r {
+      &-auto {
+        margin-right: auto;
+      }
+    }
+
     &x {
       @for $n from 0 through 12 {
         &-#{$n} {

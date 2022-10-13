@@ -44,16 +44,16 @@ An Utility CSS only library.
 
 Fork this repo and send a pull request with your proposed changes. Make sure you update docs as well if your changes need to be documented.
 
-To generate the css files run the command `npm install && npm run build` this will generate the following files; `raisin.css`, `raisin.css.map`, `raisin.min.css`, `raisin.min.css.map`.
+With NPM: To generate the css files run the command `npm install && npm run build` this will generate the following files; `raisin.css`, `raisin.css.map`, `raisin.min.css`, `raisin.min.css.map`.
 
-To generate the css files run the command `yarn && yarn run build` this will generate the following files; `raisin.css`, `raisin.css.map`, `raisin.min.css`, `raisin.min.css.map`.
+With Yarn: To generate the css files run the command `yarn && yarn run build` this will generate the following files; `raisin.css`, `raisin.css.map`, `raisin.min.css`, `raisin.min.css.map`.
 
 ## How to use
 
 Add this to the `<head>` tag:
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.1.0/raisin.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/tretapey/raisincss@1.1.1/raisin.min.css" rel="stylesheet"/>
 ```
 
 or import it in your css:
